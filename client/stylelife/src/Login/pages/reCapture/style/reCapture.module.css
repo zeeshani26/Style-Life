@@ -1,0 +1,51 @@
+
+
+.mainBox{
+    margin: auto;
+    border: 1px solid;
+    padding: 5px;
+    background-color: #eae4e4bc;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+
+.reCaptchBox > div:first-child{
+    width: 70%;
+}
+
+.reCaptchBox > div:first-child > div:first-child{
+    width: 10%;
+}
+
+.reCaptchBox > div:first-child > div:last-child{
+    width: 80%;
+    display: grid;
+    align-content: center;
+}
+
+.Image_box_recpa{
+    margin: auto;
+    width: 70%;
+}
+
+.reCaptchBox > div:last-child{
+    width: 25%;
+    padding: 0px 5px;
+}
+
+.Image_box_recpa > div > div > p{
+ font-size: x-small;
+
+}
+
+
+.Image_box_recpa > div > div > div > p{
+    font-size: xx-small;
+}
+   
+
+
+
+

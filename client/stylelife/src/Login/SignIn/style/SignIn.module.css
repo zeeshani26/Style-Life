@@ -1,0 +1,11 @@
+
+
+.mainBox > div{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.mainBox > div:nth-child(2){
+    margin-bottom: 10px;
+}
