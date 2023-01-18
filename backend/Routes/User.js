@@ -17,22 +17,35 @@ UserRouter.get("/all", async (req, res) => {
 });
 
 UserRouter.post("/register", async (req, res) => {
-  let { mobile, name, username, password } = req.body;
+  let { email, name, password } = req.body;
   try {
-    bcrypt.hash(password, 8, async (err, protected_password) => {
-      if (err) {
-        console.log(err);
-      } else {
-        let newUser = new UserModel({
-          mobile,
-          name,
-          username,
-          password: protected_password,
+    let user = await UserModel.findOne({ email });
+    if(user){
+      return res.status(400).send("User already exists");
+    }
+    else{
+      let regexpression = "[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+[.]+[a-z]{2,3}$";
+      let response = email.match(regexpression);
+      if(response){
+        bcrypt.hash(password, 8, async (err, protected_password) => {
+          if (err) {
+            console.log(err);
+          } else {
+            let newUser = new UserModel({
+            email,
+              name,
+              password: protected_password,
+            });
+            await newUser.save();
+            res.status(200).send("User has been created");
+          }
         });
-        await newUser.save();
-        res.send("User has been created");
       }
-    });
+      else{
+        return res.status(400).send("Invalid email"); 
+      }
+      
+    }
   } catch (error) {
     res.send(error);
     console.log(error)

@@ -1,10 +1,11 @@
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
 
 
 const authentication = (req,res, next)=>{
     const token = req.headers.authorization;
     if(token){
-        const decodedToken = jwt.verify(token,"phoenix");
+        const decodedToken = jwt.verify(token,process.env.key);
         if(decodedToken){
             next()
         }
