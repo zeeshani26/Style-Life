@@ -7,10 +7,7 @@ const AllRoutes = () => {
     <div>
       <Routes>
         <Route path="/" element={"Home Component"} />
-        <Route
-          path="/nightproducts"
-          element={"<Products category=`night` />"}
-        />
+        <Route path="/restro" element={<Products category="restro" />} />
         <Route
           path="/healthproducts"
           element={"<Products category=`health` />"}
