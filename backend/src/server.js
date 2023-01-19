@@ -10,9 +10,7 @@ const {HealthRouter} = require("../Routes/Health.route");
 const {authentication} = require("../middlewears/Authentication.middlewear");
 const cors = require("cors");
 
-app.use(cors({
-    origin:"*"
-}))
+app.use(cors())
 app.use(express.json());
 app.use("/user",UserRouter)
 app.use("/restro",RestaurantRouter);
