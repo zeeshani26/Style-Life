@@ -7,6 +7,7 @@ img_url:{
 rating:{
     type:String
 },
+address:String,
 name:String,
 category:String,
 bought:String,
