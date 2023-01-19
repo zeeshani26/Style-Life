@@ -7,7 +7,12 @@ const app = express();
 const {RestaurantRouter} = require('../Routes/Restaurants.route');
 const {SpaRouter} = require('../Routes/Spa.route');
 const {HealthRouter} = require("../Routes/Health.route");
-const {authentication} = require("../middlewears/Authentication.middlewear")
+const {authentication} = require("../middlewears/Authentication.middlewear");
+const cors = require("cors");
+
+app.use(cors({
+    origin:"*"
+}))
 app.use(express.json());
 app.use("/user",UserRouter)
 app.use("/restro",RestaurantRouter);
