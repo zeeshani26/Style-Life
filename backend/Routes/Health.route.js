@@ -17,13 +17,39 @@ HealthRouter.get("/",async(req,res)=>{
 
 HealthRouter.get("/filter",async(req,res)=>{
     let city = req.query.city;
-    let star = req.query.rating;
+    let sort= req.query.sort;
+    let page = req.query.page || 1;
+    let limit = req.query.limit || 10;
+    let popular = req.query.popular;
     try {
-        if(city ){
-            let data = await HealthModel.find({ address: { $regex:city, $options: 'i' } });
+        if(city && sort && popular){
+            let data = await HealthModel.find({ address : { $regex:city, $options: 'i' } }).sort({name:sort,rating:1}).skip(limit*(page-1)).limit(limit);
             res.send(data);
         }
-    } catch (error) {
+        else if(city && popular){
+            let data = await HealthModel.find({ address : { $regex:city, $options: 'i' } }).sort({rating:-1}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else if(sort && popular){
+            let data = await HealthModel.find().sort({name:sort,rating:-1}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else if(popular){
+            let data = await HealthModel.find().sort({ rating:-1}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else if(sort){
+            let data = await HealthModel.find().sort({ name:sort}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }else if(city){
+            let data = await HealthModel.find({ address : { $regex:city, $options: 'i' } }).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else{
+            let data = await HealthModel.find().skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }   
+    }  catch (error) {
         console.log(error);
     res.send(error.message);
     }

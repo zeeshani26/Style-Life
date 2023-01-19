@@ -15,12 +15,38 @@ RestaurantRouter.get("/",async(req,res)=>{
 
 RestaurantRouter.get("/filter",async(req,res)=>{
     let city = req.query.city;
-    console.log(city);
+    let sort= req.query.sort;
+    let page = req.query.page || 1;
+    let limit = req.query.limit || 10;
+    let popular = req.query.popular;
     try {
-        if(city){
-            let data = await RestaurantModel.find({ address : { $regex:city, $options: 'i' } });
+        if(city && sort && popular){
+            let data = await RestaurantModel.find({ address : { $regex:city, $options: 'i' } }).sort({name:sort,rating:1}).skip(limit*(page-1)).limit(limit);
             res.send(data);
         }
+        else if(city && popular){
+            let data = await RestaurantModel.find({ address : { $regex:city, $options: 'i' } }).sort({rating:-1}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else if(sort && popular){
+            let data = await RestaurantModel.find().sort({name:sort,rating:-1}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else if(popular){
+            let data = await RestaurantModel.find().sort({ rating:-1}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else if(sort){
+            let data = await RestaurantModel.find().sort({ name:sort}).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }else if(city){
+            let data = await RestaurantModel.find({ address : { $regex:city, $options: 'i' } }).skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }
+        else{
+            let data = await RestaurantModel.find().skip(limit*(page-1)).limit(limit);
+            res.send(data);
+        }   
     } catch (error) {
         console.log(error);
     res.send(error.message);
