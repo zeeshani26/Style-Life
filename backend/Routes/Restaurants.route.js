@@ -28,4 +28,17 @@ RestaurantRouter.get("/filter",async(req,res)=>{
 
 })
 
+//single restaurant
+
+RestaurantRouter.get("/:id",async(req,res)=>{
+    const _id = req.query.id;
+    try {
+        let singleRestaurant = await RestaurantModel.findOne(_id);
+        res.status(200).send(singleRestaurant)
+    } catch (error) {
+        console.log(error.message)
+        res.send(error.message);
+    }
+})
+
 module.exports= {RestaurantRouter};

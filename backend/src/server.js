@@ -7,14 +7,13 @@ const app = express();
 const {RestaurantRouter} = require('../Routes/Restaurants.route');
 const {SpaRouter} = require('../Routes/Spa.route');
 const {HealthRouter} = require("../Routes/Health.route");
-
+const {authentication} = require("../middlewears/Authentication.middlewear")
 app.use(express.json());
 app.use("/user",UserRouter)
 app.use("/restro",RestaurantRouter);
-
 app.use("/spa",SpaRouter);
 app.use("/health",HealthRouter);
-
+app.use(authentication);
 app.use("/cart",CartRouter);
 
 
