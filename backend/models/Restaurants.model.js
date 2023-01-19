@@ -8,11 +8,23 @@ rating:{
     type:String
 },
 name:String,
-category:String,
+address:String,
+offers:String,
 bought:String,
-type:String,
 deals:{
-    type:Array
+    type:[
+        {
+            _id:String,
+            tag:String,
+            bought:String,
+            discount:String,
+            name:String,
+            price:String,
+            discounted_price:String,
+            availability:String,
+            timing:String,
+        }
+    ]
 },
 });
 

@@ -13,9 +13,18 @@ RestaurantRouter.get("/",async(req,res)=>{
 })
 //filter for restaurants
 
-RestaurantRouter.get("/filter",(req,res)=>{
-    let city1 = req.query.city;;  
-    res.send(city1);
+RestaurantRouter.get("/filter",async(req,res)=>{
+    let city = req.query.city;
+    console.log(city);
+    try {
+        if(city){
+            let data = await RestaurantModel.find({ address : { $regex:city, $options: 'i' } });
+            res.send(data);
+        }
+    } catch (error) {
+        console.log(error);
+    res.send(error.message);
+    }
 
 })
 
