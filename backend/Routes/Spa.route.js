@@ -26,6 +26,20 @@ SpaRouter.get("/filter",async(req,res)=>{
     res.send(error.message);
     }
 
+});
+
+
+//single spa 
+
+SpaRouter.get("/:id",async(req,res)=>{
+    const _id = req.query.id;
+    try {
+        let singleSpa = await SpaModel.findOne(_id);
+        res.status(200).send(singleSpa)
+    } catch (error) {
+        console.log(error.message)
+        res.send(error.message);
+    }
 })
 
 module.exports= {SpaRouter};

@@ -6,7 +6,10 @@ const CartSchema = mongoose.Schema({
     },
     restroId:String,
     dealsId:String,
-    count:Number
+    count:{
+        type:Number,
+        default:1
+    }
 
 });
 
