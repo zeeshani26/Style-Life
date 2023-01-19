@@ -11,6 +11,7 @@ const AllRoutes = () => {
           path="/restro"
           element={<Products category='restro' />}
         />
+        <Route path="/restro" element={<Products category="restro" />} />
         <Route
           path="/healthproducts"
           element={"<Products category=`health` />"}

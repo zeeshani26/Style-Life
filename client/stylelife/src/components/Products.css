@@ -1,0 +1,46 @@
+*{
+    /* color:rgb(0, 0, 0) */
+}
+
+.hovereffect:hover{
+color: black;
+}
+
+.sortsec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    
+    
+}
+
+@media only screen and (max-width:500px) {
+    .sortsec{
+        justify-content: space-around;
+    }
+    
+}
+
+.subtitle{
+    font-family:'Courier New', Courier, monospace,monospace;
+    font-weight: bold;
+    color: gray;
+}
+
+.subtitle:hover{
+    color: black;
+}
+.price{
+    display:flex;
+    justify-content: left;
+    width: 100%;
+    margin: auto;
+    margin-top: 7px;
+
+}
+
+.eldiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    cursor: pointer;
+}
