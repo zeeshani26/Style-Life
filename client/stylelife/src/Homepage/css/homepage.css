@@ -1,0 +1,53 @@
+
+.navbardiv{
+    
+   display: flex;
+   justify-content: space-around;
+}
+.navbarbox{
+   padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbarbox>img{
+    height: 30px;
+}
+.navbarbox:hover{
+ background-color: lightgray;
+}
+
+.carousel .slide{
+    height: auto;
+   
+}
+.firstcrauser{
+    margin-top: 15px;
+    padding: 15px 15px 0px 15px;
+    background-color: lightgrey;
+}
+
+
+.brands{
+   
+    padding: 20px;
+   text-align: left;
+}
+.brands h1{
+     font-size: 25px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.brandlogo{
+    margin-top: 10px;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: yellow;
+}

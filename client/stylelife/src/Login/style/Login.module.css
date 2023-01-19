@@ -1,0 +1,29 @@
+.mainBox {
+  /* border: 1px solid red;
+  width: 75%;
+  margin: auto;
+  height: 40vh;
+  margin-top: 5rem;
+  display: flex;
+  background-color: white; */
+}
+
+.first_box_login{
+  background-color: #ef534e;
+  justify-content: center;
+  align-content: center;
+  display: grid;
+  padding: 30px;
+  color: white;
+}
+
+.first_box_login > div > div{
+  padding-bottom: 10px;
+}
+
+.second_Box_login {
+ border: 1px solid red;
+ padding: 15px;
+ width: 40%;
+}
+

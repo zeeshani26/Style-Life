@@ -1,0 +1,16 @@
+
+.mainBoxTop > div{
+   margin-bottom: 30px;
+}
+
+.MainBox > div > input{
+    margin-bottom: 1rem;
+    border: 0px;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    padding-bottom: 8px;
+}
+
+.MainBox > div > input::placeholder{
+   border: none;
+}
