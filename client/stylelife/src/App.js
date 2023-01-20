@@ -2,7 +2,7 @@ import "./App.css";
 
 import Homepageroutes from "./Homepage/Routes/homepageroutes";
 import Navbar from "./Navbar/Navbar";
-import AllRoutes from "./Pages/AllRoutes";
+import AllRoutes from "./pages/AllRoutes";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       {/* <Homepageroutes /> */}
 
       {/* Navigation bar here */}
-
+       <AllRoutes />
     </div>
   );
 }

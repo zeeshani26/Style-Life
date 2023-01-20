@@ -72,7 +72,7 @@ const SignUp = ({HandelChange,password, email, name, setPassword, setEmail, setN
        email,
        password
       }
-
+console.log(obj)
       PostForSignUp(obj)
 
 
