@@ -1,15 +1,73 @@
-import { Box, Button, Heading, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import ReCapture from "../pages/reCapture/reCapture";
 import style from "./style/SignIn.module.css";
+import { useNavigate } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
+import ForgatePassword from "../ForgatePassword/ForgatePassword";
+import axios from "axios";
 
-const SignIn = ({ HandelChange }) => {
+const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
   const [timer, setTimer] = useState(30);
-  const [buttonPermetion, setButtonPermition] = useState(true);
+  const toast = useToast();
 
-  const [OtpNumber, setOtpNumber] = useState("1234");
-  const [OtpValid, setOtpvalid] = useState(false);
-  const [OtpValue, setOtpValue] = useState("");
+  const [nextBtn, setNextBtn] = useState(true);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const navigation = useNavigate();
+
+  const PostForSignUp = async (data1) => {
+    try {
+      let res = await axios.post(
+        "https://glorious-bass-poncho.cyclic.app/user/login",
+        data1
+      );
+
+
+      if (res.data.msg == "login successful") {
+        toast({
+          position: "top",
+          title: "User Is Login.",
+          description: "Status Success",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
+
+        let obj = {
+          name,
+          user: email,
+          token: res.data.token,
+        };
+
+        localStorage.setItem("StyleLifeUserData", JSON.stringify(obj));
+
+        navigation("/");
+        onClose();
+      } else {
+        toast({
+          position: "top",
+          title: "Wrong Credentials",
+          description: "Please Try Agin",
+          status: "error",
+          duration: 5000,
+          isClosable: true,
+        });
+      }
+    } catch (err) {
+      console.log(err, "errr");
+      toast({
+        position: "top",
+        title: "Something Went Wrong",
+        description: "Please Try Agin",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
+  };
 
   useEffect(() => {
     let id;
@@ -24,67 +82,64 @@ const SignIn = ({ HandelChange }) => {
 
     const cleanup = () => {
       clearInterval(id);
-      console.log("cleanup is called");
     };
     return cleanup;
   }, []);
 
-  const nextButtonValue = () => {
-    setButtonPermition(!buttonPermetion);
-  };
-
-  const HandelChangeInput = (data) => {
-    setOtpValue(data);
+  const nextButtonValue = (data) => {
+    if (data === "yes") {
+      setNextBtn(false);
+    }
   };
 
   const HandelSubmit = () => {
-    if (OtpValue !== OtpNumber) {
-      setOtpvalid(true);
-    } else {
-      setOtpvalid(false);
-    }
+    let obj = {
+      email,
+      password,
+    };
+    PostForSignUp(obj);
   };
+
+
   return (
     <Box className={style.mainBox}>
       <Box>
         <Heading color={"#666"} as="h4" size="xl">
-          Enter 6 digit code{" "}
+          Login
         </Heading>
       </Box>
 
       <Box>
-        <Text>
-          OTP sentto you on your mobile phone 967337944{" "}
-          <Text color={"#35A7FF"} onClick={HandelChange}>
-            Edit
-          </Text>
-        </Text>
-      </Box>
-      
-      <Box>
         <Box pb="15px">
           {" "}
           <Input
-            type="number"
-            onChange={(e) => HandelChangeInput(e.target.value)}
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
             borderRadius="0px"
             _hover="none"
-            placeholder="OTP"
+            placeholder="Email"
             border="none"
             borderBottom={"1px solid black"}
           />
         </Box>
-        <Box>
-          {OtpValid ? <Text color={"red"}>Please enter valid OTP</Text> : ""}
-          {timer <= 0 ? (
-            <Text>
-              {" "}
-              Did not receive OTP <Text color={"#35A7FF"}>Get OTP on Call</Text>
-            </Text>
-          ) : (
-            <Text>Did not receive OTP ? Resend OTP in {timer} second</Text>
-          )}
+      </Box>
+
+      <Box>
+        <Box pb="15px">
+          {" "}
+          <Input
+            type="password"
+            onChange={(e) => setPassword(e.target.value)}
+            borderRadius="0px"
+            _hover="none"
+            placeholder="Password"
+            border="none"
+            borderBottom={"1px solid black"}
+          />
         </Box>
+        <Text onClick={() => setPasswordForgate(false)} color={"#35A7FF"}>
+          Forgot Password
+        </Text>
       </Box>
 
       <Box>
@@ -92,14 +147,24 @@ const SignIn = ({ HandelChange }) => {
       </Box>
 
       <Box justifyContent={"start"} display="grid">
-        <Button
+        <button
           onClick={HandelSubmit}
-          bg="#ef534e"
-          _hover="none"
-          borderRadius="0px"
-          size="md"
+          disabled={nextBtn}
+          className={style.btnNextcolor}
+          style={{ backgroundColor: nextBtn ? "gray" : "#ef534e" }}
         >
-          Next
+          Login
+        </button>
+      </Box>
+      <Box>
+        <Button
+          bg="#ef534e"
+          borderRadius={"0px"}
+          _hover={"none"}
+          className={style.btnNextcolor}
+          onClick={HandelChange}
+        >
+          Sign Up
         </Button>
       </Box>
     </Box>

@@ -3,13 +3,14 @@ import {
     Checkbox,
   } from "@chakra-ui/react";
   
-const CheckedBox = ({nextButtonValue, setLoading, changeState}) => {
+const CheckedBox = ({ setLoading, changeState}) => {
+
+  
   return (
     <Box display={"grid"} alignContent={"center"}>
     {" "}
     <Checkbox
       onChange={() => {
-        nextButtonValue();
         setLoading(false);
         changeState()
       }}
