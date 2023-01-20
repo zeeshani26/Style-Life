@@ -56,17 +56,34 @@ UserRouter.post("/login",async(req,res)=>{
   const {email,password} = req.body;
   try {
     const user = await UserModel.find({email});
+    console.log(user)
     if(user.length>0){
-      bcrypt.compare(password,user[0].password,(err,result)=>{
-        if(result){
-          const token = jwt.sign({project:"mywork"},process.env.key);
-          res.send({"msg":"login successful","token":token});
+      if(user[0].type==='user'){
+        bcrypt.compare(password,user[0].password,(err,result)=>{
+          if(result){
+            const token = jwt.sign({foo:email},process.env.KEY);
+            res.send({"msg":"login successful","token":token});
+          }
+          else{
+            res.send("Wrong Credentials")
+          }
+        })
+      }
+      else{
+        bcrypt.compare(password,user[0].password,(err,result)=>{
+          if(result){
+            const token = jwt.sign({email:email},process.env.KEY);
 
-        }
-        else{
-          res.send("Wrong Credentials")
-        }
-      })
+            req.body.userID = user[0]._id;
+
+            res.send({"msg":"Admin login successful","token":token});
+  
+          }
+          else{
+            res.send("Wrong Credentials")
+          }
+        })
+      }
     }
     else{
       res.send("Please fill correct email id")
@@ -76,6 +93,5 @@ UserRouter.post("/login",async(req,res)=>{
   }
 })
 
-module.exports = {UserRouter}
-//userid=63c8d350abd2bb9fc104a8f5
-//
+module.exports = {UserRouter};
+

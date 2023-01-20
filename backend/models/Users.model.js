@@ -13,6 +13,10 @@ password:{
 name:{
     type:String,
     required:true
+},
+type:{
+    type:String,
+    default:'user'
 }
 });
 
