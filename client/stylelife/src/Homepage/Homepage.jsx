@@ -3,7 +3,7 @@ import "./css/homepage.css"
 import {Box,Grid,Heading,Image,Text} from "@chakra-ui/react"
 import {useNavigate} from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import {Carousel} from "react-responsive-carousel"
+// import {Carousel} from "react-responsive-carousel"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

@@ -1,9 +1,9 @@
 const express = require("express");
+require("dotenv").config();
 const UserRouter = express.Router();
 const { UserModel } = require("../models/Users.model");
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
-const e = require("express");
 
 
 UserRouter.get("/all", async (req, res) => {
@@ -59,7 +59,7 @@ UserRouter.post("/login",async(req,res)=>{
     if(user.length>0){
       bcrypt.compare(password,user[0].password,(err,result)=>{
         if(result){
-          const token = jwt.sign({project:"mywork"},"phoenix");
+          const token = jwt.sign({project:"mywork"},process.env.key);
           res.send({"msg":"login successful","token":token});
 
         }
@@ -77,3 +77,5 @@ UserRouter.post("/login",async(req,res)=>{
 })
 
 module.exports = {UserRouter}
+//userid=63c8d350abd2bb9fc104a8f5
+//
