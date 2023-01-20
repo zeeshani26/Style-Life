@@ -12,7 +12,7 @@ function App() {
       {/* <Homepageroutes /> */}
 
       {/* Navigation bar here */}
-      <AllRoutes />
+
     </div>
   );
 }
