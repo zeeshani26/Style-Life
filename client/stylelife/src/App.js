@@ -11,7 +11,7 @@ function App() {
 
 
       {/* Navigation bar here */}
-      <AllRoutes />
+     
 
 
     </div>
