@@ -33,7 +33,8 @@ RestaurantRouter.get("/filter",async(req,res)=>{
             res.send(data);
         }
         else if(popular){
-            let data = await RestaurantModel.find().sort({ rating:-1}).skip(limit*(page-1)).limit(limit);
+            let data = await RestaurantModel.find().sort({ rating:-1})
+            console.log(data)
             res.send(data);
         }
         else if(sort){

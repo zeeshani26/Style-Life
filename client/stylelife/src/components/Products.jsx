@@ -12,8 +12,8 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-import Header from "../components/sidebar/Header";
-import Sidebar from "../components/sidebar/Sidebar";
+import Header from "./sidebar/Header";
+import Sidebar from "./sidebar/Sidebar";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { filterdata, getdata } from "../Redux/products/Prodaction";
