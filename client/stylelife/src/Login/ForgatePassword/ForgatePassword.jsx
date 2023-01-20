@@ -29,9 +29,8 @@ const ForgatePassword = ({
       setRoute_forgate_Chgange(false);
     }
 
-
     if(email.substring().includes("@gmail.com")){
-      setTimerShow(true);
+          setTimerShow(true);
     }else{
       toast({
         position: "top",
@@ -46,7 +45,6 @@ const ForgatePassword = ({
 
   useEffect(() => {
     let id;
-
     if (TimerShow) {
       id = setInterval(() => {
         setTimer((ele) => {
@@ -61,6 +59,7 @@ const ForgatePassword = ({
     if (timer <= -1) {
       clearInterval(id);
     }
+
     console.log(TimerShow, timer, otp);
 
     const cleanup = () => {
