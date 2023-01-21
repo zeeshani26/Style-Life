@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+ .logobox:hover{
+  cursor: pointer;
+ }
+
+ 
 
 .mobilenav{
     width: 100%;
@@ -71,7 +76,7 @@
  width: 100%;
 }
 .drawer-logo img{
- height: 60px;
+ height: 50px;
   width: auto;
 }
  #drawer-flex{

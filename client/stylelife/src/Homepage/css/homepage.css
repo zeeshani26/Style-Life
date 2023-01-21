@@ -16,6 +16,9 @@
     flex-direction: column;
     align-items: center;
 }
+.navbarbox:hover{
+    cursor: pointer;
+}
 .navbarbox>img{
     height: 30px;
 }
@@ -138,6 +141,9 @@
    gap: 20px;
     
 }
+.nextthingbox:hover{
+    cursor: pointer;
+}
 
 
 .promobox{
@@ -152,3 +158,56 @@
     font-weight: bolder;
     font-family: sans-serif;
 }
+
+@media all and (min-width:700px) and (max-width: 1000px){
+.navbardiv{
+   
+    margin-top: 60px;
+}
+#sliderimages img{
+ height: 200px;
+ 
+}
+.dealbox{
+   grid-template-columns: repeat(3, 1fr);
+   }
+   .nextthingbox{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+   gap: 20px;
+    
+}
+
+}
+
+@media all and (min-width:400px) and (max-width: 699px){
+    .navbardiv{
+      
+        margin-top: 60px;
+    }
+    .navbarbox{
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #sliderimages img{
+        height: 170px;
+       
+    }
+    .dealbox{
+       grid-template-columns: repeat(2, 1fr);
+       }
+       .nextthingbox{
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+       gap: 20px;
+        
+    }
+    .saloonfacialbox img{
+        height: 100px;
+    }
+    }
