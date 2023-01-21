@@ -1,0 +1,2533 @@
+{
+    "restro": [
+        {
+            "_id": "63c83c605bb5ad898b0e9eed",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6214795c6f487a000cf59e5c.jpg",
+            "rating": "4.5",
+            "name": "Saptami - Holiday Inn",
+            "address": "Andheri Kurla Road, Andheri East",
+            "offers": "Set Menu Meals/Drinks and Starters\n                             from\n                                699",
+            "bought": "3,153 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9eee",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/63495be422b317000b5a1b5d.jpg",
+            "rating": "4.6",
+            "name": "Global Buffet - Svenska Design Hotel",
+            "address": "SAB TV Road, Andheri West",
+            "offers": "Buffet Offers\n                             from\n                                860",
+            "bought": "1,662 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9eef",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/62f341934183b9000baa41e0.jpg",
+            "rating": "3.6",
+            "name": "Pappilon Park",
+            "address": "New Link Road, Andheri West",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "bought": "41 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef0",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/624d27816f487a000b812229.jpg",
+            "rating": "4.8",
+            "name": "Tipplers Lounge - Four Points By Sheraton",
+            "address": "Vashi",
+            "offers": "Drinks & Starters Offers\n                             from\n                                199",
+            "bought": "47 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef1",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6308bc1354f372000b30d522.jpg",
+            "rating": "4.5",
+            "name": "Boss Burger Brews & B.B.Q.s",
+            "address": "Ghatkopar East",
+            "offers": "Buffet Offers\n                             from\n                                1079",
+            "bought": "48 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef2",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6152aaf51e2731000ba3884c.jpg",
+            "rating": "4.6",
+            "name": "Ottoman Cafe",
+            "address": "Andheri West",
+            "offers": "Set Menu Meals/Drinks and Starters\n                             from\n                                699",
+            "bought": "253 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef3",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6120b9d91e2731000b703fbb.jpg",
+            "rating": "3.6",
+            "name": "India Bistro",
+            "address": "Sion - Trombay Road, Govandi",
+            "offers": "Buffet Offers\n                             from\n                                860",
+            "bought": "48 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef4",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/62d8fc3eb3c621000b6fb852.jpg",
+            "rating": "4.8",
+            "name": "Downtown Dive - Eskay Resorts",
+            "address": "Borivali West",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "bought": "253 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef5",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/621874373b031b000b349d79.jpg",
+            "rating": "4.8",
+            "name": "The Finch",
+            "address": "Borivali West",
+            "offers": "Buffet Offers\n                             from\n                                1079",
+            "bought": "441 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef6",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/621874373b031b000b349d79.jpg",
+            "rating": "4.4",
+            "name": "72 - Holiday Inn",
+            "address": "The Hub Mall, Goregaon East",
+            "offers": "Set Menu Meals/Drinks and Starters\n                             from\n                                699",
+            "bought": "48 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef7",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/621874373b031b000b349d79.jpg",
+            "rating": "4.4",
+            "name": "China Ming",
+            "address": "The Hub Mall, Goregaon East",
+            "offers": "Buffet Offers\n                             from\n                                860",
+            "bought": "253 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef8",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6214795c6f487a000cf59e5c.jpg",
+            "rating": "4.5",
+            "name": "Fiona - Radisson Blu Mumbai International Airport",
+            "address": "Marol Naka, Andheri East",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "bought": "441 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9ef9",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6214795c6f487a000cf59e5c.jpg",
+            "rating": "4.6",
+            "name": "Lotus Cafe - JW Marriott Mumbai Juhu",
+            "address": "Juhu Road, Juhu",
+            "offers": "Buffet Offers\n                             from\n                                860",
+            "bought": "48 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9efa",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6214795c6f487a000cf59e5c.jpg",
+            "rating": "3.6",
+            "name": "Downtown Dive - Eskay Resorts",
+            "address": "Borivali West",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "bought": "253 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9efb",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6214795c6f487a000cf59e5c.jpg",
+            "rating": "4.8",
+            "name": "The Finch",
+            "address": "Borivali West",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "bought": "441 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9efc",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/637489ec22156b000b887c5a.jpg",
+            "rating": "4.5",
+            "name": "72 - Holiday Inn",
+            "address": "The Hub Mall, Goregaon East",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9efd",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/600ab442e1ecca000b03413a.jpg",
+            "rating": "4.6",
+            "name": "China Ming",
+            "address": "The Hub Mall, Goregaon East",
+            "offers": "Set Menu Meals , Drinks with Starters offers\n                             from\n                                1350",
+            "bought": "35 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9efe",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/5fe83d3321ff67000c11f823.jpg",
+            "rating": "3.6",
+            "name": "Fiona - Radisson Blu Mumbai International Airport",
+            "address": "Marol Naka, Andheri East",
+            "offers": "Buffet Offers\n                             from\n                                1079",
+            "bought": "48 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9eff",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/626a5d2e3b031b000b97b4cf.jpg",
+            "rating": "4.8",
+            "name": "Lotus Cafe - JW Marriott Mumbai Juhu",
+            "address": "Juhu Road, Juhu",
+            "offers": "Set Menu Meals/Drinks and Starters\n                             from\n                                699",
+            "bought": "253 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9f00",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/5fd4bc41c4d55d000bc6f40a.jpg",
+            "rating": "4.5",
+            "name": "BKC DIVE",
+            "address": "CST Road",
+            "offers": "Buffet Offers\n                             from\n                                860",
+            "bought": "48 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9f01",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/62f341934183b9000baa41e0.jpg",
+            "rating": "4.6",
+            "name": "House Of Asia - The Mirador",
+            "address": "New Link Road, Andheri East",
+            "offers": "Buffet Offers\n                             from\n                                629",
+            "bought": "253 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9f02",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/63495be422b317000b5a1b5d.jpg",
+            "rating": "4.8",
+            "name": "Glocal Junction",
+            "address": "New Link Road, Andheri West",
+            "offers": "Set Menu Meals/Drinks and Starters\n                             from\n                                699",
+            "bought": "441 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        },
+        {
+            "_id": "63c83c605bb5ad898b0e9f03",
+            "img_src": "https://img4.nbstatic.in/tr:w-350/6214795c6f487a000cf59e5c.jpg",
+            "rating": "4.5",
+            "name": "The Beryl Club - Kohinoor Continental",
+            "address": "Andheri Kurla Road, Andheri East",
+            "offers": "Buffet Offers\n                             from\n                                860",
+            "bought": "98 Bought",
+            "deals": [
+                {
+                    "_id": "63c79a5009a807df2a4ad53a",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "12 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "3,540",
+                    "discounted_price": "2,360",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53b",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Breakfast Buffet (Veg/Non-Veg)",
+                    "price": "1,179",
+                    "discounted_price": "1,003",
+                    "availability": "All Days",
+                    "timing": "6:30 AM - 11 AM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53c",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "5 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Lunch Buffets (Veg/Non-Veg)",
+                    "price": "4,599",
+                    "discounted_price": "3,066",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53d",
+                    "tag": "",
+                    "bought": "5 Bought",
+                    "discount": "15% OFF",
+                    "name": "Lunch Buffet (Veg/Non-Veg)",
+                    "price": "1,533",
+                    "discounted_price": "1,304",
+                    "availability": "Mon - Sat",
+                    "timing": "12:30 PM - 3 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53e",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "31 Bought",
+                    "discount": "33% OFF",
+                    "name": "3 Dinner Buffets (Veg/Non-Veg)",
+                    "price": "5,661",
+                    "discounted_price": "3,774",
+                    "availability": "All Days",
+                    "timing": "7:30 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad53f",
+                    "tag": "",
+                    "bought": "16 Bought",
+                    "discount": "15% OFF",
+                    "name": "Dinner Buffet (Veg/Non-Veg)",
+                    "price": "1,887",
+                    "discounted_price": "1,605",
+                    "availability": "Mon - Sat",
+                    "timing": "7 PM - 11 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad540",
+                    "tag": "Big Buffet Carnival",
+                    "bought": "Just arrived",
+                    "discount": "33% OFF",
+                    "name": "3 Sunday Brunch (Veg/Non-Veg)",
+                    "price": "7,431",
+                    "discounted_price": "4,954",
+                    "availability": "Sun",
+                    "timing": "12:30 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad541",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg)",
+                    "price": "2,477",
+                    "discounted_price": "2,105",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                },
+                {
+                    "_id": "63c79a5009a807df2a4ad542",
+                    "tag": "",
+                    "bought": "Just arrived",
+                    "discount": "15% OFF",
+                    "name": "Sunday Brunch (Veg/Non-Veg) with Alcoholic Beverages",
+                    "price": "3,421",
+                    "discounted_price": "2,908",
+                    "availability": "Sun",
+                    "timing": "12 PM - 4 PM"
+                }
+            ]
+        }
+    ]
+}
