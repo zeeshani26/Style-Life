@@ -1,0 +1,24 @@
+.relaxingmasssagebox{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+@media all and (min-width:700px) and (max-width: 1000px){
+    .relaxingmasssagebox{
+       
+        grid-template-columns: repeat(4,1fr);
+       
+        gap: 10px;
+    }
+}
+@media all and (min-width:400px) and (max-width: 699px){
+    .relaxingmasssagebox{
+       
+        grid-template-columns: repeat(3,1fr);
+       
+        gap: 10px;
+    }
+}
