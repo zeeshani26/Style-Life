@@ -1,26 +1,14 @@
-<<<<<<< HEAD
+
 // import React, { Component } from 'react'
 // import "./css/homepage.css"
-// import {Box,Heading,Image,Text} from "@chakra-ui/react"
+// import {Box,Grid,Heading,Image,Text} from "@chakra-ui/react"
 // import {useNavigate} from "react-router-dom"
 // import "react-responsive-carousel/lib/styles/carousel.min.css"
-// import {Carousel} from "react-responsive-carousel"
+//  import {Carousel} from "react-responsive-carousel"
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
-// import { brandsdata } from './requireddata'
-=======
-import React, { Component } from 'react'
-import "./css/homepage.css"
-import {Box,Grid,Heading,Image,Text} from "@chakra-ui/react"
-import {useNavigate} from "react-router-dom"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
- import {Carousel} from "react-responsive-carousel"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,relaxingdata,promocodedata } from './requireddata'
->>>>>>> 1c6f81c091a667d09d02d5be9ff2db2bc274b89e
+// import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,relaxingdata,promocodedata } from './requireddata'
 
 
 
@@ -66,7 +54,6 @@ import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,r
 // const Homepage = () => {
 //     const navigate=useNavigate()
 
-<<<<<<< HEAD
 //     const settings = {
 //         dots: true,
 //         infinite: false,
@@ -103,140 +90,153 @@ import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,r
 //           }
 //         ]
 //       };
-=======
-    const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 7,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
+//     const settings = {
+//         dots: true,
+//         infinite: false,
+//         speed: 500,
+//         slidesToShow: 7,
+//         slidesToScroll: 1,
+//         initialSlide: 0,
+//         nextArrow: <SampleNextArrow />,
+//         prevArrow: <SamplePrevArrow />,
+//         responsive: [
+//           {
+//             breakpoint: 1024,
+//             settings: {
+//               slidesToShow: 4,
+//               slidesToScroll: 3,
+//               infinite: true,
+//               dots: true
+//             }
+//           },
+//           {
+//             breakpoint: 600,
+//             settings: {
+//               slidesToShow: 2,
+//               slidesToScroll: 2,
+//               initialSlide: 2
+//             }
+//           },
+//           {
+//             breakpoint: 480,
+//             settings: {
+//               slidesToShow: 1,
+//               slidesToScroll: 1
+//             }
+//           }
+//         ]
+//       };
 
-      const quick = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
-      const promo = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
->>>>>>> 1c6f81c091a667d09d02d5be9ff2db2bc274b89e
+//       const quick = {
+//         dots: true,
+//         infinite: false,
+//         speed: 500,
+//         slidesToShow: 6,
+//         slidesToScroll: 1,
+//         initialSlide: 0,
+//         nextArrow: <SampleNextArrow />,
+//         prevArrow: <SamplePrevArrow />,
+//         responsive: [
+//           {
+//             breakpoint: 1024,
+//             settings: {
+//               slidesToShow: 3,
+//               slidesToScroll: 3,
+//               infinite: true,
+//               dots: true
+//             }
+//           },
+//           {
+//             breakpoint: 600,
+//             settings: {
+//               slidesToShow: 2,
+//               slidesToScroll: 2,
+//               initialSlide: 2
+//             }
+//           },
+//           {
+//             breakpoint: 480,
+//             settings: {
+//               slidesToShow: 1,
+//               slidesToScroll: 1
+//             }
+//           }
+//         ]
+//       };
+//       const promo = {
+//         dots: true,
+//         infinite: false,
+//         speed: 500,
+//         slidesToShow: 3,
+//         slidesToScroll: 1,
+//         initialSlide: 0,
+//         nextArrow: <SampleNextArrow />,
+//         prevArrow: <SamplePrevArrow />,
+//         responsive: [
+//           {
+//             breakpoint: 1024,
+//             settings: {
+//               slidesToShow: 2,
+//               slidesToScroll: 1,
+//               infinite: true,
+//               dots: true
+//             }
+//           },
+//           {
+//             breakpoint: 600,
+//             settings: {
+//               slidesToShow: 2,
+//               slidesToScroll: 2,
+//               initialSlide: 2
+//             }
+//           },
+//           {
+//             breakpoint: 480,
+//             settings: {
+//               slidesToShow: 1,
+//               slidesToScroll: 1
+//             }
+//           }
+//         ]
+//       };
   
-//   return (
-//    <>
-//      <div className='navbardiv'>
-//      {navbararray.map((el)=>{
-//         return <Box className='navbarbox' onClick={()=>navigate(`/${el.go}`)}>
-//             <Image src={el.src} alt={el.alt} />
-//             <Text>{el.text}</Text>
-//         </Box>
-//      })}
-//    </div>
-//    <div className='firstcrauser'>
-//    <Carousel infiniteLoop autoPlay>
-//    {silderimages.map((el)=>{
-//     return <div id="sliderimages" key={el.src}>
-//         <Image src={el.src}  alt="sliding" />
-//     </div>
-//    })}
-//  </Carousel>
-//    </div>
+// //   return (
+// //    <>
+// //      <div className='navbardiv'>
+// //      {navbararray.map((el)=>{
+// //         return <Box className='navbarbox' onClick={()=>navigate(`/${el.go}`)}>
+// //             <Image src={el.src} alt={el.alt} />
+// //             <Text>{el.text}</Text>
+// //         </Box>
+// //      })}
+// //    </div>
+// //    <div className='firstcrauser'>
+// //    <Carousel infiniteLoop autoPlay>
+// //    {silderimages.map((el)=>{
+// //     return <div id="sliderimages" key={el.src}>
+// //         <Image src={el.src}  alt="sliding" />
+// //     </div>
+// //    })}
+// //  </Carousel>
+// //    </div>
 
 
-<<<<<<< HEAD
+// //    <div className='brands'>
+// //     <h1 as={"h2"}>Top Brands</h1>
+// //     <Slider {...settings}>
+// //     {brandsdata.map((el)=>{
+// //         return (
+// //             <div className='brandlogo' key={el.id}>
+// //                 <Image src={el.logo} alt="brands" />
+// //             </div>
+// //         )
+// //        })}
+// //     </Slider>
+      
+// //       </div>
+// //    </>
+// //   )
+// // }
 //    <div className='brands'>
 //     <h1 as={"h2"}>Top Brands</h1>
 //     <Slider {...settings}>
@@ -244,138 +244,120 @@ import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,r
 //         return (
 //             <div className='brandlogo' key={el.id}>
 //                 <Image src={el.logo} alt="brands" />
+               
 //             </div>
 //         )
 //        })}
 //     </Slider>
       
 //       </div>
+   
+//      <Box className='nearbyheading'>
+//      <h1>New on Nearby!</h1>
+//      </Box>
+
+//       <Box className='dealbox'>
+     
+//        {nearbydata.map((el)=>{
+//   return (
+//     <Box className='insidenearby' key={el.id}>
+//     <Image src={el.logo} alt={el.alt} />
+//     <hr />
+//     <Text  >{el.tag}</Text>
+//     <hr />
+//     <Text fontSize='sm' style={{color:"tomato"}}> {el.offers}</Text>
+//     <hr />
+//           <Box className='nearbypricebox'>
+//           <p >₹{el.Rs}</p>
+//           <p >₹{el.discount}</p>
+//           </Box>
+
+//   </Box>
+//   )
+//        })}
+
+      
+      
+      
+//     </Box>
+
+//     <div className='quickstartbox'>
+//     <h1 as={"h2"}>Quick Bites</h1>
+//     <Slider {...quick}>
+//     {quickstartdata.map((el)=>{
+//         return (
+//             <div className='quicklogo' key={el.id}>
+//                 <Image src={el.logo} alt="brands" />
+               
+//             </div>
+//         )
+//        })}
+//     </Slider>
+      
+//       </div>
+
+//       <div className='nextthingbox'>
+//         {nextthingdata.map((el)=>{
+//             return (
+//                 <Box className='insidenextthing' key={el.id}>
+//            <Image src={el.logo} />
+//                 </Box>
+//             )
+//         })}
+//       </div>
+
+//      <Box className='nearbyheading'>
+//      <h1>Popular Salon Services</h1>
+//      </Box>
+//       <div className='nextthingbox'>
+//         {saloonservicedata.map((el)=>{
+//             return (
+//                 <Box className='insidenextthing' key={el.id}>
+//            <Image src={el.logo} />
+//            <Text fontSize='xl' as='b'>{el.tag}</Text>
+//                 </Box>
+//             )
+//         })}
+//       </div>
+
+//       <Box className='nearbyheading'>
+//      <h1>Relaxing Massages</h1>
+//      </Box>
+//       <div className='nextthingbox'>
+//         {relaxingdata.map((el)=>{
+//             return (
+//                 <Box className='insidenextthing' key={el.id}>
+//            <Image src={el.logo} />
+//            <Text fontSize='xl' as='b'>{el.tag}</Text>
+//                 </Box>
+//             )
+//         })}
+//       </div>
+
+
+//       <div className='promobox'>
+//     <h1 >Top Brands</h1>
+//     <Slider {...promo}>
+//     {promocodedata.map((el)=>{
+//         return (
+//             <>
+//             <div className='promologo' key={el.id}>
+//                 <Image src={el.logo} alt="brands" />
+               
+//             </div>
+//             <Text fontSize='xs' as='samp' ml={"10px"}>Valid Till {el.valid}</Text>
+//             </>
+//         )
+//        })}
+//     </Slider>
+
+//     <Box className='offerdatebox'>
+
+//     </Box>
+      
+//       </div>
 //    </>
 //   )
 // }
-=======
-   <div className='brands'>
-    <h1 as={"h2"}>Top Brands</h1>
-    <Slider {...settings}>
-    {brandsdata.map((el)=>{
-        return (
-            <div className='brandlogo' key={el.id}>
-                <Image src={el.logo} alt="brands" />
-               
-            </div>
-        )
-       })}
-    </Slider>
-      
-      </div>
-   
-     <Box className='nearbyheading'>
-     <h1>New on Nearby!</h1>
-     </Box>
-
-      <Box className='dealbox'>
-     
-       {nearbydata.map((el)=>{
-  return (
-    <Box className='insidenearby' key={el.id}>
-    <Image src={el.logo} alt={el.alt} />
-    <hr />
-    <Text  >{el.tag}</Text>
-    <hr />
-    <Text fontSize='sm' style={{color:"tomato"}}> {el.offers}</Text>
-    <hr />
-          <Box className='nearbypricebox'>
-          <p >₹{el.Rs}</p>
-          <p >₹{el.discount}</p>
-          </Box>
-
-  </Box>
-  )
-       })}
-
-      
-      
-      
-    </Box>
-
-    <div className='quickstartbox'>
-    <h1 as={"h2"}>Quick Bites</h1>
-    <Slider {...quick}>
-    {quickstartdata.map((el)=>{
-        return (
-            <div className='quicklogo' key={el.id}>
-                <Image src={el.logo} alt="brands" />
-               
-            </div>
-        )
-       })}
-    </Slider>
-      
-      </div>
-
-      <div className='nextthingbox'>
-        {nextthingdata.map((el)=>{
-            return (
-                <Box className='insidenextthing' key={el.id}>
-           <Image src={el.logo} />
-                </Box>
-            )
-        })}
-      </div>
-
-     <Box className='nearbyheading'>
-     <h1>Popular Salon Services</h1>
-     </Box>
-      <div className='nextthingbox'>
-        {saloonservicedata.map((el)=>{
-            return (
-                <Box className='insidenextthing' key={el.id}>
-           <Image src={el.logo} />
-           <Text fontSize='xl' as='b'>{el.tag}</Text>
-                </Box>
-            )
-        })}
-      </div>
-
-      <Box className='nearbyheading'>
-     <h1>Relaxing Massages</h1>
-     </Box>
-      <div className='nextthingbox'>
-        {relaxingdata.map((el)=>{
-            return (
-                <Box className='insidenextthing' key={el.id}>
-           <Image src={el.logo} />
-           <Text fontSize='xl' as='b'>{el.tag}</Text>
-                </Box>
-            )
-        })}
-      </div>
-
-
-      <div className='promobox'>
-    <h1 >Top Brands</h1>
-    <Slider {...promo}>
-    {promocodedata.map((el)=>{
-        return (
-            <>
-            <div className='promologo' key={el.id}>
-                <Image src={el.logo} alt="brands" />
-               
-            </div>
-            <Text fontSize='xs' as='samp' ml={"10px"}>Valid Till {el.valid}</Text>
-            </>
-        )
-       })}
-    </Slider>
-
-    <Box className='offerdatebox'>
-
-    </Box>
-      
-      </div>
-   </>
-  )
-}
->>>>>>> 1c6f81c091a667d09d02d5be9ff2db2bc274b89e
 
 // export default Homepage

@@ -1,137 +1,244 @@
-import { Box, Button, Flex, Image, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, ButtonGroup, Flex, Grid, IconButton, Image, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
 import './AdminHome.scss';
 import {useSelector,useDispatch} from 'react-redux'
 import { useEffect } from 'react';
-import { getAllHealth, getAllRestro, getAllSpa } from '../../Redux/Admin/AdminTypes';
+import { AddHealth, AddRestro, AddSpa, getAllHealth, getAllRestro, getAllSpa, getAllUser } from '../../Redux/Admin/AdminTypes';
 import { useState } from 'react';
+import AdminSpa from './AdminSpa/AdminSpa';
+import AdminRestro from './AdminRestro.jsx/AdminRestro';
+import AdminHealth from './AdminHealth/AdminHealth';
+import Loader from '../../Components/Loader/Loader';
+import AdminUser from './AdminUser/AdminUser';
+import { AddIcon } from '@chakra-ui/icons';
+import axios from 'axios';
 
 const AdminHome = () => {
-    const {spa,restro,health,AdminLoading} = useSelector(store=>store.admin);
+    const {spa,restro,health,AdminLoading,user} = useSelector(store=>store.admin);
+    const { isOpen:isRestroOpen, onOpen:OnRestroOpen, onClose:onRestroClose } = useDisclosure();
+    const { isOpen:isSpaOpen, onOpen:OnSpaOpen, onClose:onSpaClose } = useDisclosure();
+    const { isOpen:isHealthOpen, onOpen:OnHealthOpen, onClose:onHealthClose } = useDisclosure();
     const [restValue, setRestValue] = useState(true);
     const [spaValue, setSpaValue] = useState(false);
     const [healthValue, setHealthValue] = useState(false);
+    const [userValue, setUserValue] = useState(false);
+    const [restroAddName, setRestroAddName] = useState("");
+    const [restroAddAdress, setRestroAddAddress] = useState("");
+    const [restroAddOffers, setRestroAddOffers] = useState("");
+    const [restroAddImg, setRestroAddImg] = useState("");
+    const [spaAddName,   setSpaAddName] = useState("");
+    const [spaAddAdress, setSpaAddAddress] = useState("");
+    const [spaAddOffers, setSpaAddOffers] = useState("");
+    const [spaAddImg,    setSpaAddImg] = useState("");
+    const [healthAddName,   setHealthAddName] = useState("");
+    const [healthAddAdress, setHealthAddAddress] = useState("");
+    const [healthAddOffers, setHealthAddOffers] = useState("");
+    const [healthAddImg,    setHealthAddImg] = useState("");
     const dispatch = useDispatch();
-    const { isOpen, onOpen, onClose } = useDisclosure()
     useEffect(()=>{
       dispatch(getAllRestro())
     },[]);
 
-    const handleUpdate = ()=>{
-
+    const handleUser = ()=>{
+      setRestValue(false);
+      setSpaValue(false);
+      setHealthValue(false);
+      setUserValue(true);
+      dispatch(getAllUser ())
     }
-    console.log(health);
-  return (
-    <Flex>
-      
-      <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Update the deal</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            {/* <Lorem   count={2} /> */}
-            Fill the required Details which you want to update
-            <form action="" style={{display:'flex',flexDirection:'column'}}>
-              <label htmlFor="">Name</label>
-              <input type="text" placeholder='name' />
-              <label htmlFor="">Address</label>
-              <input type="text" placeholder='name' />
-              <label htmlFor="">Offers</label>
-              <input type="text" placeholder='name' />
-              <label htmlFor="">Ratings</label>
-              <input type="text" placeholder='name' />
-            </form>
-          </ModalBody>
 
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
-              Close
-            </Button>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
-              Update
-            </Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-    <Box w='25%' border={'1px solid black'} h='100vh' className='sidebar'>
+
+const handleRestroPost = (e)=>{
+  e.preventDefault();
+  const payload={
+    img_src:restroAddImg,
+    name:restroAddName,
+    offers:restroAddOffers,
+    address:restroAddAdress
+  };
+  dispatch(AddRestro(payload))
+}
+const handleSpaPost = (e)=>{
+  e.preventDefault();
+  const payload={
+    img_src:spaAddImg,
+    name:spaAddName,
+    category:spaAddOffers,
+    address: spaAddAdress
+  };
+  dispatch(AddSpa(payload))
+}
+
+const handleHealthPost = (e)=>{
+  e.preventDefault();
+  const payload={
+    img:healthAddImg,
+    name:healthAddName,
+    category:healthAddOffers,
+    address: healthAddAdress
+  };
+  dispatch(AddHealth( payload))
+}
+
+  return (
+    <Flex className='maindiv'>
+    <Box w='25%' h='100vh' className='sidebar'>
     <Text fontWeight={'bold'} fontSize='lg' mb='2rem'>DashBoard</Text>
-    <Box>
-        <Box className='admin_categories' onClick={()=>{
+    <Box display={'flex'} flexDirection='column'>
+       
+        <ButtonGroup w={"100%"}  isAttached variant='outline' >
+        <Button  className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}} onClick={()=>{
           setRestValue(true);
           dispatch(getAllRestro ());
           setSpaValue(false);
           setHealthValue(false);
-        }}>Restaurants</Box>
-        <Box className='admin_categories' onClick={()=>{
+        }}>Restaurants</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnRestroOpen} />
+</ButtonGroup>
+
+<ButtonGroup  w={"100%"} isAttached variant='outline'>
+<Button className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}} onClick={()=>{
                setRestValue(false);
                setSpaValue(true);
                dispatch(getAllSpa());
                setHealthValue(false);
-        }}>Spa</Box>
-        <Box className='admin_categories' onClick={()=>{
+        }}>Spa</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnSpaOpen}/>
+</ButtonGroup>
+    
+
+<ButtonGroup w={"100%"} isAttached variant='outline'>
+<Button className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}} onClick={()=>{
                setRestValue(false);
                setSpaValue(false);
                setHealthValue(true);
                dispatch(getAllHealth())
-        }}>Health</Box>
-        <Box className='admin_categories'>Users</Box>
-        <Box className='admin_categories'>Stats</Box>
+        }}>Health</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnHealthOpen} />
+</ButtonGroup>
+       
+<ButtonGroup w={"100%"} isAttached variant='outline'>
+<Button className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}} onClick={handleUser}>Users</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnHealthOpen} />
+</ButtonGroup>
+
+<ButtonGroup w={"100%"} isAttached variant='outline'>
+<Button className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}}>Stats</Button>
+  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnHealthOpen} />
+</ButtonGroup>
+        
+        
     </Box>
     </Box>
-    <Box w='72%' border={'1px solid black'} m='auto'>
+    {AdminLoading ? <Loader/> : <Box w='72%' m='auto' className='rightbar'>
     <Text fontSize={'lg'} fontWeight='bold' fontStyle={'italic'}>{restValue ? "Restaurants" : spaValue ? "Spa" : "Health"}</Text>
-    <Box display={'flex'}  flexWrap={'wrap'} border='1px solid blue' mt='2rem' >
+    <Grid className='divide-section' w='full' templateColumns={{sm:"repeat(2,1fr)",md:"repeat(3,1fr)"}} gap='1rem' padding='1rem' >
 
     {
-      restValue && restro?.map((el,ind)=>{
-        return <Flex key={ind} flexDirection='column' w='33%' border='1px solid red' padding={'1rem'} m='auto'>
-          <Box w='90%' m='auto' border='1px solid green'>
+      restValue ? restro?.map((el,ind)=><AdminRestro key={ind} Data={el} />)
+    : spaValue ? spa?.map((el,ind)=><AdminSpa Data={el} key={ind}/>)
+    : healthValue ? health?.map((el,ind)=><AdminHealth key={ind} Data={el}/>)
+    : user.map((el,ind)=><AdminUser key={ind} Data={el}/>)
 
-          <Image src={el.img_src} alt=""  />
-          </Box>
-          <h3>{el.name}</h3>
-          <h3>{el.address}</h3>
-          <h3>{el.offers}</h3>
-          <h3>{el.rating}</h3>
-          <Flex justifyContent='space-evenly'>
-          <Button onClick={onOpen}>Update</Button>
-          <Button>Delete</Button>
-          </Flex>
-        </Flex>
-      })
-    }
-    {
-      spaValue && spa?.map((el,ind)=>{
-        return <Flex key={ind} flexDirection='column' w='33%' border='1px solid red' padding={'1rem'} m='auto'>
-          <Box w='90%' m='auto' border='1px solid green'>
-
-          <Image src={el.img_src} alt=""  />
-          </Box>
-          <h3>{el.name}</h3>
-          <h3>{el.address}</h3>
-          <h3>{el.rating}</h3>
-          <h3>{el.bought}</h3>
-        </Flex>
-      })
-    }
-    {
-      healthValue && health?.map((el,ind)=>{
-        return <Flex key={ind} flexDirection='column' w='33%' border='1px solid red' padding={'1rem'} m='auto'>
-          <Box w='90%' m='auto' border='1px solid green'>
-
-          <Image src={el.img} alt={el.name} />
-          </Box>
-          <h3>{el.name}</h3>
-          <h3>{el.address}</h3>
-          <h3>{el.category}</h3>
-          <h3>{el.rating}</h3>
-        </Flex>
-      })
     }
 
-    </Box>
-    </Box>
+    </Grid>
+    </Box>}
+    {/* for restro adding */}
+    <Modal isOpen={isRestroOpen} onClose={onRestroClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Add a new Restaurant</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            {/* <Lorem   count={2} /> */}
+            Fill the required Details which you want to update
+            <form action="" style={{display:'flex',flexDirection:'column'}} onSubmit={handleRestroPost}>
+              <label htmlFor="">Name</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setRestroAddName(e.target.value)} />
+              <label htmlFor="">Address</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setRestroAddAddress(e.target.value)} />
+              <label htmlFor="">Image</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setRestroAddImg(e.target.value)} />
+              <label htmlFor="">Offers</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setRestroAddOffers(e.target.value)} />
+              <Input type={'submit'}  />
+            </form>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme='blue' mr={3} onClick={onRestroClose}>
+              Close
+            </Button>
+            <Button colorScheme='blue' mr={3} onClick={onRestroClose}>
+              Add
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+
+      {/* for spa posting */}
+      <Modal isOpen={isSpaOpen} onClose={onSpaClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Add a new Spa/Massage Center</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            {/* <Lorem   count={2} /> */}
+            Fill the required Details which you want to update
+            <form action="" style={{display:'flex',flexDirection:'column'}} onSubmit={handleSpaPost}>
+              <label htmlFor="">Name</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setSpaAddName(e.target.value)} />
+              <label htmlFor="">Address</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setSpaAddAddress(e.target.value)} />
+              <label htmlFor="">Image</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setSpaAddImg(e.target.value)} />
+              <label htmlFor="">Category</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setSpaAddOffers(e.target.value)} />
+              <Input type={'submit'}  />
+            </form>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme='blue' mr={3} onClick={onSpaClose}>
+              Close
+            </Button>
+            <Button colorScheme='blue' mr={3} onClick={onSpaClose}>
+              Add
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+
+      {/* for health posting */}
+      <Modal isOpen={isHealthOpen} onClose={onHealthClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Add a new Spa/Massage Center</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            {/* <Lorem   count={2} /> */}
+            Fill the required Details which you want to update
+            <form action="" style={{display:'flex',flexDirection:'column'}} onSubmit={handleHealthPost  }>
+              <label htmlFor="">Name</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setHealthAddName(e.target.value)} />
+              <label htmlFor="">Address</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setHealthAddAddress(e.target.value)} />
+              <label htmlFor="">Image</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setHealthAddImg(e.target.value)} />
+              <label htmlFor="">Category</label>
+              <Input type="text" placeholder='name' required onChange={(e)=>setHealthAddOffers(e.target.value)} />
+              <Input type={'submit'} value='Add' colorScheme={'green'} w='50%' mt='1rem' ml='auto' mr='auto' bg={'green.400'} />
+            </form>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme='blue' mr={3} onClick={onHealthClose}>
+              Close
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </Flex>
   )
 }
