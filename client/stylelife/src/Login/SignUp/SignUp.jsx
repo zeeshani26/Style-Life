@@ -10,7 +10,7 @@ const SignUp = ({HandelChange}) => {
 
   
   return (
-    <Box w="90%" m="auto" className={style.mainBoxTop}>
+    <Box w="90%" m="auto" className={style.mainBoxTop} mt={"60px"}>
       <Heading color={"#666"} as="h4" size="xl">
         Login / Sign up{" "}
       </Heading>

@@ -45,7 +45,7 @@ const SignIn = ({ HandelChange }) => {
     }
   };
   return (
-    <Box className={style.mainBox}>
+    <Box className={style.mainBox} mt={"60px"}>
       <Box>
         <Heading color={"#666"} as="h4" size="xl">
           Enter 6 digit code{" "}

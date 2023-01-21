@@ -3,7 +3,7 @@ import "./css/homepage.css"
 import {Box,Grid,Heading,Image,Text} from "@chakra-ui/react"
 import {useNavigate} from "react-router-dom"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-// import {Carousel} from "react-responsive-carousel"
+ import {Carousel} from "react-responsive-carousel"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +11,7 @@ import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,r
 
 
 
-const navbararray=[
+  const navbararray=[
     {src:"https://img4.nbstatic.in/tr:w-/60af2a061e2731000ba1096a.png",alt:"res",text:"Resturent Deals",go:"resturent"},
     {src:"https://img4.nbstatic.in/tr:w-/639acd9b8db992000bac8a46.png",alt:"res",text:"Buffet Deals",go:"buffet"},
     {src:"https://img4.nbstatic.in/tr:w-/60ac96c840e9df000b6cbf94.png",alt:"res",text:"Salon Deals",go:"saloon"},
@@ -28,7 +28,7 @@ let silderimages=[
     {src:"https://img4.nbstatic.in/tr:w-2800/63b3af1e22b317000c1336a8.jpg"}
 ]
 
-function SampleNextArrow(props) {
+ export const  SampleNextArrow=(props)=> {
     const { className, style, onClick } = props;
     return (
       <div
@@ -39,7 +39,7 @@ function SampleNextArrow(props) {
     );
   }
   
-  function SamplePrevArrow(props) {
+  export const SamplePrevArrow=(props)=> {
     const { className, style, onClick } = props;
     return (
       <div
@@ -75,7 +75,7 @@ const Homepage = () => {
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 4,
               slidesToScroll: 2,
               initialSlide: 2
             }
@@ -83,7 +83,7 @@ const Homepage = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           }
@@ -120,7 +120,7 @@ const Homepage = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1
             }
           }
@@ -173,6 +173,7 @@ const Homepage = () => {
         </Box>
      })}
    </div>
+
    <div className='firstcrauser'>
    <Carousel infiniteLoop autoPlay>
    {silderimages.map((el)=>{
@@ -242,7 +243,10 @@ const Homepage = () => {
     </Slider>
       
       </div>
-
+       
+      <Box className='nearbyheading'>
+     <h1>Next Thing on Your Mind!</h1>
+     </Box>
       <div className='nextthingbox'>
         {nextthingdata.map((el)=>{
             return (
@@ -283,7 +287,7 @@ const Homepage = () => {
 
 
       <div className='promobox'>
-    <h1 >Top Brands</h1>
+    <h1 >Promo Codes For More Savings</h1>
     <Slider {...promo}>
     {promocodedata.map((el)=>{
         return (
