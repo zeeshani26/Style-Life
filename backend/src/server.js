@@ -15,12 +15,13 @@ const cors = require("cors");
 app.use(cors())
 app.use(express.json());
 app.use("/user",UserRouter)
-// app.use(authentication);
 app.use("/restro",RestaurantRouter);
 app.use("/spa",SpaRouter);
 app.use("/health",HealthRouter);
 
-app.use("/cart",CartRouter);                                                             
+// app.use(authentication);
+app.use("/cart",CartRouter); 
+// app.use(AdminVerification)                                                            
 app.use("/admin",AdminRouter);
 app.listen(process.env.PORT,async()=>{
     try {

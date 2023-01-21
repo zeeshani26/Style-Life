@@ -29,6 +29,8 @@ function App() {
 
       {/* Navigation bar here */}
       {/* <AllRoutes /> */}
+       {/* <AllRoutes /> */}
+       <AdminHome/>
        <AllRoutes />
 
     </div>

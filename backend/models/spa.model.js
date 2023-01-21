@@ -1,19 +1,36 @@
 const mongoose = require('mongoose');
 
 const SpaSchema = mongoose.Schema({
-img_url:{
-    type:String
+img_src:{
+    type:String,
+    required:true
 },
 rating:{
-    type:String
+    type:String,
 },
-address:String,
-name:String,
-category:String,
+address:{
+    type:String,
+    required:true
+},
+name:{
+    type:String,
+    required:true
+},
+category:{
+    type:String,
+    required:true
+},
 bought:String,
 type:String,
 deals:{
-    type:Array
+    type:[{
+        bought:String,
+        discount:String,
+        discounted_price:String,
+        name:String,
+        price:Number || String,
+        timing:String
+    }]
 },
 });
 

@@ -2,17 +2,36 @@ const mongoose = require('mongoose');
 
 const HealthSchema = mongoose.Schema({
 img:{
-    type:String
+    type:String,
+    required:true
 },
-name:String,
+name:{
+    type:String,
+    required:true
+},
 address:{
-    type:String
+    type:String,
+    required:true
 },
-category:String,
+category:{
+    type:String,
+    required:true
+},
 bought:String,
 type:String,
 deals:{
-    type:Array
+    type:[
+        {
+            timing:String,
+            availability:String,
+            bought:String,
+            discount:String,
+            discounted_price:String,
+            name:String,
+            price:String,
+            Service:String
+        }
+    ]
 },
 });
 

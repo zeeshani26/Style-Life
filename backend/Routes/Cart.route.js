@@ -3,8 +3,10 @@ const {CartModel} = require('../models/Cart.model');
 const CartRouter = express.Router();
 
 CartRouter.get("/",async(req,res)=>{
+    const id = req.body.userId;
+    console.log(req.body);
     try {
-        const allData = await CartModel.find();
+        const allData = await CartModel.find({userId:id});
         res.status(200).json(allData);
     } catch (error) {
         console.log(error.message);
