@@ -24,6 +24,7 @@ const ReCapture = ({ nextButtonValue }) => {
     let id;
     id = setTimeout(() => {
       setcheackedIcon(true);
+      nextButtonValue("yes");
     }, 3000);
   };
 
@@ -36,11 +37,10 @@ const ReCapture = ({ nextButtonValue }) => {
             {cheackedIcon ? (
               <Box display={"grid"} alignContent={"center"}>
                 {" "}
-                <Icon as={CheckIcon} w={8} h={8} color="red.500" />{" "}
+                <Icon as={CheckIcon} w={8} h={8} color="green.500" />{" "}
               </Box>
             ) : Loading ? (
               <CheckedBox
-                nextButtonValue={nextButtonValue}
                 setLoading={setLoading}
                 changeState={changeState}
               />

@@ -4,6 +4,7 @@ import {Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, Drawe
 import {Link, NavLink} from "react-router-dom"
 import { PhoneIcon, AddIcon, WarningIcon,HamburgerIcon,ChevronDownIcon} from '@chakra-ui/icons'
 import log from "../logo/logo.jpg"
+import ModalLogin from "../Login/Modal"
 import loc from "../logo/location.png"
 import {useNavigate} from "react-router-dom"
 import styles from "../Homepage/css/Nav.css"
@@ -64,7 +65,12 @@ const Navbar = () => {
      style={{height:"25px"}}
     />
     <Spacer />
+
     <Button bg={"none"}> <Link to="/signup">Login/signup</Link> </Button>
+
+    <Button bg={"none"}> <ModalLogin title={"Login"}/></Button>
+    <Button bg={"none"}> <Link to="/login">Login/signup</Link> </Button>
+
     </>
    </Box>
   
@@ -104,10 +110,17 @@ const Navbar = () => {
          <Box id='drawer-flex'>
          <Box className={"flex"} >
     < >
-    <Image src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" alt="acntlogo" 
+    {/* <Image src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" alt="acntlogo" 
      style={{height:"25px"}}
+
     />
     <Button bg={"none"}> <Link to="/login">Login</Link> </Button>
+
+    /> */}
+
+    <ModalLogin title={"yes"} />
+   
+
     </>
    </Box>
 

@@ -14,3 +14,10 @@
 .MainBox > div > input::placeholder{
    border: none;
 }
+
+.btnNextcolor{
+   padding:5px 15px;
+   border-radius: 0px;
+   background-color:#ef534e;
+
+}

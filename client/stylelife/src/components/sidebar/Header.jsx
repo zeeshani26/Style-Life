@@ -1,18 +1,9 @@
-import { Box, Text, Flex, Select } from "@chakra-ui/react";
+import { Box, Text, Flex } from "@chakra-ui/react";
 import { FaListUl } from "react-icons/fa";
 import { useState } from "react";
-import Pagination from "../Pagination";
 import "../Products.css";
 
-const Header = ({
-  showSidebarButton = true,
-  onShowSidebar,
-  count,
-  page,
-  updateCurrentPage,
-  sortorder,
-  category,
-}) => {
+const Header = ({ showSidebarButton = true, onShowSidebar, sortorder }) => {
   const [pop, setpop] = useState("white");
   const [hl, sethl] = useState("white");
   const [lh, setlh] = useState("white");
@@ -106,7 +97,7 @@ const Header = ({
             alignItems={"center"}
             fontSize={{ sm: "10px", md: "12px" }}
           >
-            Price(High to Low)
+            Name (A-Z)
           </Text>
         </Box>
         <Box
@@ -132,7 +123,7 @@ const Header = ({
             margin="auto"
             alignItems={"center"}
           >
-            Price(Low to High)
+            Name (Z-A)
           </Text>
         </Box>
       </Box>

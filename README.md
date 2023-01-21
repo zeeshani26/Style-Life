@@ -93,10 +93,17 @@ Meharwan is responsible for Add to cart functionality and payment page.
 
 /cart/dec (pass userId,restroId and deals id in body)
 
+### popular
+
+just add popular=true in query for sorting the list according to rating.
+
+ ### pagination
+
+ by default you will get 10 result per pages but if you want to increase limit pass limit as query and your desired counts for example if i want 20 result per page i have to pass limit=20 in query.
+ you can go to different pages by passing them in query like if i want to get 2nd page data i will pass page=2 in query.
+
+### sort
+
+sorting will apply basis on name (asc or desc) just pass sort=asc for ascending order and sort=desc for descending in query.
 
 #Note only a registered user can use add to cart functionality
-
-
-
-
-
