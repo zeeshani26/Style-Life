@@ -1,13 +1,63 @@
 import { Box, Button, Heading, Image, Text, Flex } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useToast } from "@chakra-ui/react";
 import "./SingleProduct.css";
+import axios from "axios";
 
 const SingleProduct = () => {
+  const getCart = async () => {
+    let res = await axios
+      .get(`https://glorious-bass-poncho.cyclic.app/restro/cart`)
+      .then((res) => {
+        setCart([...cart, res.data]);
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
+
+  const postCart = async (restroId, dealid) => {
+    await axios
+      .post(`https://glorious-bass-poncho.cyclic.app/restro/cart/add`, {
+        restroId: restroId,
+        dealId: dealid,
+      })
+      .then((res) => console.log("Adding to cart", res))
+      .catch((err) => console.log(err));
+  };
+  const toast = useToast();
+  const [cart, setCart] = useState([]);
+  const [restroId, setRestroId] = useState("");
+  const [dealid, setDealid] = useState("");
+  const [total, setTotal] = useState(0);
   let product = JSON.parse(localStorage.getItem("product"));
-  console.log(product);
+  // console.log(product);
   useEffect(() => {
     product = JSON.parse(localStorage.getItem("product")) || {};
-  }, [product]);
+    setRestroId(product._id);
+  }, [product, total]);
+
+  const handleAdd = async (e) => {
+    // console.log(e);
+    setDealid(e._id);
+    let pri = e.price.split(",").join("");
+    e.price = Number(pri);
+    toast({
+      title: "Item Added.",
+      description: "Use Cart to Checkout",
+      status: "success",
+      duration: 5000,
+      isClosable: true,
+    });
+    postCart(restroId, dealid);
+    getCart();
+    // let res = await getCart();
+    // console.log(res);
+    // setCart(res);
+
+    // setTotal(total + Number(pri));
+  };
+  console.log("DealID:", dealid, "RestroID:", restroId);
+  console.log(cart);
   return (
     <Box className="main">
       <Box className="first">
@@ -72,12 +122,12 @@ const SingleProduct = () => {
           >
             <Box display={"flex"} flexDirection="column">
               {/* Start */}
-              {product.deals.map((e) => (
+              {product.deals.map((ele) => (
                 <Box
                   display="flex"
                   flexDirection={"column"}
                   fontFamily="Open Sans"
-                  key={e._id}
+                  key={ele._id}
                   mt="10px"
                 >
                   <Box
@@ -114,7 +164,7 @@ const SingleProduct = () => {
                             fontWeight="700"
                             mt={"12px"}
                           >
-                            {e.name}
+                            {ele.name}
                           </Text>
                           <Text
                             color={"RGB(52, 168, 83)"}
@@ -145,7 +195,7 @@ const SingleProduct = () => {
                             margin="0px auto"
                             padding={"2px 5px"}
                           >
-                            {e.discount}
+                            {ele.discount}
                           </Text>
                           <Box
                             display={"flex"}
@@ -161,7 +211,7 @@ const SingleProduct = () => {
                               fontWeight="400"
                               alignSelf={"center"}
                             >
-                              {e.discounted_price}
+                              {ele.discounted_price}
                             </Text>
                             <Text
                               color={"RGB(51, 51, 51)"}
@@ -172,7 +222,7 @@ const SingleProduct = () => {
                               }}
                               fontWeight={"700"}
                             >
-                              ₹750
+                              {ele.price}
                             </Text>
                           </Box>
                           <Text
@@ -186,8 +236,15 @@ const SingleProduct = () => {
                             colorScheme={"red"}
                             mt={"20px"}
                             loadingText="Adding"
-                            pl="25px"
-                            pr="25px"
+                            pl={{ base: "14px", md: "18px", lg: "25px" }}
+                            pr={{ base: "14px", md: "18px", lg: "25px" }}
+                            fontSize={{
+                              base: "12px",
+                              sm: "14px",
+                              md: "15px",
+                              lg: "16px",
+                            }}
+                            onClick={() => handleAdd(ele)}
                           >
                             ADD +
                           </Button>
@@ -230,36 +287,40 @@ const SingleProduct = () => {
                 pb={{ base: "24px", lg: "34px" }}
                 fontFamily="Open Sans"
               >
-                <Box
-                  display={"flex"}
-                  justifyContent="space-between"
-                  p={"14px 0px"}
-                >
+                <Box display={"flex"} flexDirection="column" p={"14px 0px"}>
                   {/* Map starts here */}
-                  <Box
-                    className="itemName"
-                    fontSize={"13px"}
-                    fontWeight="400"
-                    color="RGB(51, 51, 51)"
-                  >
-                    Breakfast Buffet (Veg/Non-Veg)
-                  </Box>
-                  <Box
-                    className="itemQty"
-                    fontSize={"14px"}
-                    fontWeight="400"
-                    color={"RGB(51, 51, 51)"}
-                  >
-                    x 1
-                  </Box>
-                  <Box
-                    className="itemPrice"
-                    fontSize={"14px"}
-                    fontWeight="700"
-                    color={"#515151"}
-                  >
-                    ₹ 1150
-                  </Box>
+                  {cart.length != 0 ? (
+                    cart.map((e) => (
+                      <Box display={"flex"} justifyContent="space-between">
+                        <Box
+                          className="itemName"
+                          fontSize={"13px"}
+                          fontWeight="400"
+                          color="RGB(51, 51, 51)"
+                        >
+                          {e.name}
+                        </Box>
+                        <Box
+                          className="itemQty"
+                          fontSize={"14px"}
+                          fontWeight="400"
+                          color={"RGB(51, 51, 51)"}
+                        >
+                          x 1
+                        </Box>
+                        <Box
+                          className="itemPrice"
+                          fontSize={"14px"}
+                          fontWeight="700"
+                          color={"#515151"}
+                        >
+                          ₹{e.price}
+                        </Box>
+                      </Box>
+                    ))
+                  ) : (
+                    <Text>Add Items</Text>
+                  )}
                 </Box>
                 <Box width="80%" margin="auto" border="1px solid #dbdbdb"></Box>
                 <Box
@@ -290,7 +351,7 @@ const SingleProduct = () => {
                     fontSize={"16px"}
                     fontWeight="700"
                   >
-                    ₹ 1150
+                    ₹{total}
                   </Box>
                 </Box>
                 <Button
@@ -299,7 +360,12 @@ const SingleProduct = () => {
                   pl={{ base: "0%", md: "30%", lg: "39%" }}
                   pr={{ base: "0%", md: "30%", lg: "39%" }}
                   fontWeight={"700"}
-                  fontSize="16px"
+                  fontSize={{
+                    base: "12px",
+                    sm: "14px",
+                    md: "15px",
+                    lg: "16px",
+                  }}
                   fontFamily={"Open Sans sans-serif"}
                   borderRadius="3px"
                 >
@@ -340,18 +406,33 @@ const SingleProduct = () => {
               >
                 Valid on all prepaid deals | No minimum purchase
               </Text>
-              <Box border={"1px dotted black"} width="45%" pl="4px" mt="10px">
+              <Box
+                border={"1px dotted black"}
+                width={"fit-content"}
+                pl="4px"
+                mt="10px"
+              >
                 <Flex justifyContent={"space-between"} alignItems="center">
                   <Text
                     fontWeight={600}
-                    fontSize={"14px"}
+                    fontSize={{
+                      base: "8px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "14px",
+                    }}
                     color={"#5FA6DB"}
                     fontFamily="Open Sans"
                   >
                     NBLUCKY
                   </Text>
                   <Text
-                    fontSize={"14px"}
+                    fontSize={{
+                      base: "8px",
+                      sm: "10px",
+                      md: "12px",
+                      lg: "14px",
+                    }}
                     fontWeight="light"
                     backgroundColor={"#E1E9EC"}
                     fontFamily="Open Sans"

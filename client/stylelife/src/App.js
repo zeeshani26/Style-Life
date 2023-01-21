@@ -1,20 +1,16 @@
 import "./App.css";
+import AllRoutes from "./pages/AllRoutes";
 
-import Homepageroutes from "./Homepage/Routes/homepageroutes";
-import Navbar from "./Navbar/Navbar";
-import AdminHome from "./Pages/Admin/AdminHome";
-import AllRoutes from "./Pages/AllRoutes";
-
+// import Homepageroutes from "./Homepage/Routes/homepageroutes";
+// import Navbar from "./Navbar/Navbar";
+// import AdminHome from "./Pages/Admin/AdminHome";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      {/* <Homepageroutes /> */}
-
-      {/* Navigation bar here */}
-      {/* <AllRoutes /> */}
-       <AllRoutes />
+      {/* <Navbar />
+      <Homepageroutes /> */}
+      <AllRoutes />
     </div>
   );
 }
