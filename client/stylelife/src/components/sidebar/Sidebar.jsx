@@ -37,6 +37,18 @@ const SidebarContent = ({
   let val1 = "Andheri East";
   let val2 = "Andheri West";
   let val3 = "Borivali West";
+  let val4 = "Ghatkopar East";
+  let val5 = "Ghatkopar West";
+  let val6 = "Bandra West";
+  let val7 = "Charni Road";
+  let cat;
+  if (category === "spa") {
+    cat = "Spa & Massage";
+  } else if (category === "health") {
+    cat = "Health & Wellness";
+  } else {
+    cat = "Restaurants";
+  }
 
   return (
     <>
@@ -47,12 +59,19 @@ const SidebarContent = ({
         cursor="pointer"
         marginTop="45px"
       >
-        <Box backgroundColor={"white"} padding="10px" pb="2px">
+        <Box
+          backgroundColor={"white"}
+          padding="16px"
+          pb="20px"
+          mt="50px"
+          textAlign={"left"}
+          border="1px solid #dbdbdb"
+        >
           <Text fontFamily="Open Sans" fontSize={"20px"} fontWeight="700">
             Win Rs 500 instant off code
           </Text>
           <Text
-            mt={"100px"}
+            mt={"30px"}
             fontSize="14px"
             fontFamily={"Open Sans"}
             fontWeight="600"
@@ -67,8 +86,6 @@ const SidebarContent = ({
                 fontSize={"14px"}
                 color={"#5FA6DB"}
                 fontFamily="Open Sans"
-                pr="2px"
-                pl="2px"
               >
                 NBLUCKY
               </Text>
@@ -84,6 +101,24 @@ const SidebarContent = ({
               </Text>
             </Flex>
           </Box>
+          <Box
+            width="100%"
+            margin="auto"
+            mt={"14px"}
+            border="1px solid #dbdbdb"
+          ></Box>
+          <Flex justifyContent={"space-between"} mt="14px">
+            <Text
+              color={"RGB(102, 102, 102)"}
+              fontSize="12px"
+              fontWeight={"600"}
+            >
+              Valid till 02 Feb 2023
+            </Text>
+            <Text fontSize={"12px"} fontWeight="600" color={"RGB(239, 83, 78)"}>
+              Know more
+            </Text>
+          </Flex>
         </Box>
         <Flex
           flexDirection="column"
@@ -91,109 +126,7 @@ const SidebarContent = ({
           backgroundColor={"white"}
           mt="20px"
         >
-          <Accordion allowToggle>
-            <AccordionItem>
-              <h2>
-                <AccordionButton>
-                  <Box as="span" flex="1" textAlign="left">
-                    Location
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              </h2>
-              <AccordionPanel pb={4}>
-                <Flex flexDirection="column">
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(getdata(1, "", "", category));
-                      norm();
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      All
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val1, page, sort, order, category));
-                      tognormal(val1);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val1}
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val2, page, sort, order, category));
-                      tognormal(val2);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val2}
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val3, page, sort, order, category));
-                      tognormal(val3);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val3}
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val3, page, sort, order, category));
-                      tognormal(val3);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val3}
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val3, page, sort, order, category));
-                      tognormal(val3);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val3}
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val3, page, sort, order, category));
-                      tognormal(val3);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val3}
-                    </Text>
-                  </Checkbox>
-                  <Checkbox
-                    onChange={() => {
-                      dispatch(filterdata(val3, page, sort, order, category));
-                      tognormal(val3);
-                      onClick();
-                    }}
-                  >
-                    <Text className="hovereffect" color="grey">
-                      {val3}
-                    </Text>
-                  </Checkbox>
-                </Flex>
-              </AccordionPanel>
-            </AccordionItem>
+          <Accordion>
             <AccordionItem>
               <h2>
                 <AccordionButton>
@@ -206,8 +139,110 @@ const SidebarContent = ({
               <AccordionPanel pb={4}>
                 <Flex flexDirection="column">
                   <Text className="hovereffect" color="grey">
-                    Restaurants
+                    {cat}
                   </Text>
+                </Flex>
+              </AccordionPanel>
+            </AccordionItem>
+            <AccordionItem>
+              <h2>
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="left">
+                    Location
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <Flex flexDirection="column">
+                  <Box
+                    onClick={() => {
+                      dispatch(getdata(1, "", "", category));
+                      norm();
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      All
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val1, page, sort, order, category));
+                      tognormal(val1);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val1}
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val2, page, sort, order, category));
+                      tognormal(val2);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val2}
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val3, page, sort, order, category));
+                      tognormal(val3);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val3}
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val4, page, sort, order, category));
+                      tognormal(val4);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val4}
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val5, page, sort, order, category));
+                      tognormal(val5);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val5}
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val6, page, sort, order, category));
+                      tognormal(val6);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val6}
+                    </Text>
+                  </Box>
+                  <Box
+                    onClick={() => {
+                      dispatch(filterdata(val7, page, sort, order, category));
+                      tognormal(val7);
+                      onClick();
+                    }}
+                  >
+                    <Text className="hovereffect" color="grey">
+                      {val7}
+                    </Text>
+                  </Box>
                 </Flex>
               </AccordionPanel>
             </AccordionItem>
