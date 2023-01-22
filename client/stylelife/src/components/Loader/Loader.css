@@ -1,0 +1,30 @@
+.loader {
+    width: 12em;
+    height: 1em;
+    border-radius: 8px;
+    background-color: #47a7ff44;
+    position: absolute;
+    top:50%;
+    left:50%;   
+    border:1px solid black;
+  }
+  
+  .loader div {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #47a7ff;
+    animation: width7435 5s linear infinite;
+    transition: all;
+  }
+  
+  @keyframes width7435 {
+    from {
+      /*width: 0;*/
+      transform: scaleX(0);
+    }
+  
+    to {
+      transform: scaleX(1);
+    }
+  }

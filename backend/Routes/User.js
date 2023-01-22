@@ -56,17 +56,32 @@ UserRouter.post("/login",async(req,res)=>{
   const {email,password} = req.body;
   try {
     const user = await UserModel.find({email});
+    // console.log(user)
     if(user.length>0){
-      bcrypt.compare(password,user[0].password,(err,result)=>{
-        if(result){
-          const token = jwt.sign({project:"mywork"},process.env.key);
-          res.send({"msg":"login successful","token":token});
+      if(user[0].type==='user'){
+        bcrypt.compare(password,user[0].password,(err,result)=>{
+          if(result){
+            const token = jwt.sign({email:email,id:user[0]._id},process.env.KEY);
+            res.send({"msg":"login successful","token":token});
+          }
+          else{
+            res.send("Wrong Credentials")
+          }
+        })
+      }
+      else{
+        bcrypt.compare(password,user[0].password,(err,result)=>{
+          if(result){
+            const token = jwt.sign({email:email,adminId:user[0]._id},process.env.ADMINKEY);
 
-        }
-        else{
-          res.send("Wrong Credentials")
-        }
-      })
+            res.send({"msg":"Admin login successful","token":token});
+  
+          }
+          else{
+            res.send("Wrong Credentials")
+          }
+        })
+      }
     }
     else{
       res.send("Please fill correct email id")
@@ -76,6 +91,47 @@ UserRouter.post("/login",async(req,res)=>{
   }
 })
 
-module.exports = {UserRouter}
-//userid=63c8d350abd2bb9fc104a8f5
-//
+
+//forgot password
+
+UserRouter.get("/forgot",async(req,res)=>{
+  const email = req.body.email;
+
+  try {
+    const data =await UserModel.find({email:email});
+    if(data.length>0){
+      res.status(200).send({"user":"true"});
+    }else{
+    res.send("user doesn't exist")
+    }
+
+  } catch (error) {
+    console.log(error.message);
+    res.send(error.message)
+  }
+});
+
+UserRouter.patch("/setpass",async(req,res)=>{
+  const email = req.body.email;
+  const password= req.body.password
+  try {
+    
+    const data = await UserModel.find({email});
+    if(data.length>0){
+      bcrypt.hash(password, 8, async (err, protected_password) => {
+        if (err) {
+          console.log(err);
+        } else {
+          await UserModel.updateOne({email },{password:protected_password});
+          res.status(200).send("User password has been changed successfully");
+        }
+      });
+    }
+  } catch (error) {
+    res.send(error.message);
+    console.log(error);
+  }
+})
+
+module.exports = {UserRouter};
+

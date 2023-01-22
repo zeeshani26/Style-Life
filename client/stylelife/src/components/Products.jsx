@@ -12,8 +12,8 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
-import Header from "../components/sidebar/Header";
-import Sidebar from "../components/sidebar/Sidebar";
+import Header from "./sidebar/Header";
+import Sidebar from "./sidebar/Sidebar";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { filterdata, getdata } from "../Redux/products/Prodaction";
@@ -27,7 +27,7 @@ const mdVariant = { navigation: "sidebar", navigationButton: false };
 const Products = ({ category }) => {
   const [page, setpage] = useState(1);
   const [sort, setsort] = useState("");
-  const [order, setorder] = useState("");
+  const [order, setorder] = useState(false);
   const [filtval, setfiltval] = useState("");
   const [normal, setnormal] = useState(false);
 
@@ -61,19 +61,19 @@ const Products = ({ category }) => {
 
   const sortorder = (val) => {
     if (val === "pop") {
-      setsort("rating");
-      setorder("desc");
+      setsort("pop");
+      setpage(1);
     } else {
-      setsort("dealse.price");
-      setorder(val);
+      setsort("false");
+      setorder(!order);
+      setpage(1);
     }
   };
 
-  // const tolocal = (el) => {
-  //   localStorage.setItem("element", JSON.stringify(el));
-  //   navigate("/ProductDetails");
-  // };
-  console.log(products);
+  const tolocal = (el) => {
+    localStorage.setItem("product", JSON.stringify(el));
+    navigate("/ProductDetails");
+  };
 
   return (
     <>
@@ -115,14 +115,16 @@ const Products = ({ category }) => {
             </Box>
           )}
 
-          {products.data.length === 0 && (
+          {products.data.length === 0 && products.loading == false && (
             <Box>
               {/* <Image
                 boxSize="400px"
                 m="auto"
                 src="https://upload.wikimedia.org/wikipedia/commons/2/22/Sad.gif"
               /> */}
-              <Heading>Results not found for this page</Heading>
+              <Heading>
+                Results not found for this Location. Please Select Another
+              </Heading>
             </Box>
           )}
 
@@ -136,12 +138,17 @@ const Products = ({ category }) => {
             gap="20px"
           >
             {products.data?.map((el) => (
-              <Box backgroundColor={"white"} key={el._id}>
+              <Box
+                backgroundColor={"white"}
+                key={el._id}
+                onClick={() => tolocal(el)}
+              >
+                {/* <Link to={`/${el._id}`}> */}
                 <Box className="eldiv" textAlign="center" pr="20px" pl="20px">
                   <Image
                     m="auto"
                     mt="18px"
-                    src={el.img_src}
+                    src={category === "health" ? el.img : el.img_src}
                     width="100%"
                     height="160px"
                     alt="title"
@@ -241,6 +248,7 @@ const Products = ({ category }) => {
                 >
                   <Text>&emsp;&emsp;{el.bought}</Text>
                 </Box>
+                {/* </Link> */}
               </Box>
             ))}
           </Grid>

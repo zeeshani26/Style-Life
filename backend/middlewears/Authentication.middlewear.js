@@ -4,16 +4,19 @@ const jwt = require("jsonwebtoken");
 
 const authentication = (req,res, next)=>{
     const token = req.headers.authorization;
+    // console.log(res.body,"Body");
     if(token){
-        const decodedToken = jwt.verify(token,process.env.key);
+        const decodedToken = jwt.verify(token,process.env.KEY);
         if(decodedToken){
+            console.log("decoded token is",decodedToken)
+            req.body.userID = decodedToken.id;
             next()
         }
         else{
             res.send("Please Login!")
         }
     }
-    else{
+    else{   
 res.send("Please Login!")
     }
 }

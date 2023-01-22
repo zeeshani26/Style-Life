@@ -1,14 +1,21 @@
 const mongoose = require('mongoose');
 
 const RestaurantSchema = mongoose.Schema({
-img_url:{
-    type:String
+img_src:{
+    type:String,
+    required:true
 },
 rating:{
-    type:String
+    type:String,
 },
-name:String,
-address:String,
+name:{
+    type:String,
+    required:true
+},
+address:{
+    type:String,
+    required:true
+},
 offers:String,
 bought:String,
 deals:{
