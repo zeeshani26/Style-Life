@@ -8,32 +8,13 @@ import AllRoutes from "./Pages/AllRoutes";
 
 
 import AdminHome from "./Pages/Admin/AdminHome";
+import PrivateRoute from "./Components/PrivateRoute";
 
 function App() {
   return (
     <div className="App">
-
-      {/* <Navbar /> */}
-      {/* <AllRoutes /> */}
+      <Navbar/>
       {/* <Homepageroutes /> */}
-      {/* <Homepageroutes /> */}
-
-      {/* Navigation bar here */}
-      {/* <Footer /> */}
-
-
-      <Navbar />
-      <AllRoutes />
-      <Homepageroutes />
-      {/* <Homepageroutes /> */}
-
-      <Footer />
-      {/* <Navbar /> */}
-      {/* <Homepageroutes /> */}
-       <AdminHome/>
-       {/* <AllRoutes /> */}
-
-       <AllRoutes />
     </div>
   );
 }

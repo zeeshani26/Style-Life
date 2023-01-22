@@ -65,11 +65,7 @@ const Navbar = () => {
      style={{height:"25px"}}
     />
     <Spacer />
-
-    <Button bg={"none"}> <Link to="/signup">Login/signup</Link> </Button>
-
     <Button bg={"none"}> <ModalLogin title={"Login"}/></Button>
-    <Button bg={"none"}> <Link to="/login">Login/signup</Link> </Button>
 
     </>
    </Box>

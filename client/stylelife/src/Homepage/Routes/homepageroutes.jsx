@@ -1,9 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
 import Homepage from "../Homepage";
-import Products from "../../components/Products";
-import SingleProduct from "../../components/SingleProduct";
-
+import Products from "../../Components/Products";
+import SingleProduct from "../../Components/SingleProduct";
+import PaymentPage from "../../Add To Cart/PaymentPage/PaymentPage";
+import AdminHome from "../../Pages/Admin/AdminHome";
+import ErrorPage from "../../Components/ErrorPage";
 const Homepageroutes = () => {
   return (
     <>
@@ -16,6 +18,10 @@ const Homepageroutes = () => {
         <Route path="/spa" element={<Products category="spa" />}></Route>
         <Route path="/health" element={<Products category="health" />}></Route>
         <Route path="/ProductDetails" element={<SingleProduct />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/admin" element={<AdminHome />} />
+        <Route path="*" element={<ErrorPage />} />
+        
       </Routes>
     </>
   );

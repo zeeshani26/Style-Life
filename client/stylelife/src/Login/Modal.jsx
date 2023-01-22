@@ -13,7 +13,7 @@ import Login from './Login'
 
 const ModalLogin = ({title}) => {
 
-      const { isOpen, onOpen, onClose } = useDisclosure()
+      const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
           <>
