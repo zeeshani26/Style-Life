@@ -38,7 +38,7 @@ const AdminUser = ({Data}) => {
     <Box className="flip-card-inner">
         <Box className="flip-card-front">
         <Flex flexDirection={'column'}>
-        <Box w='70%' m='auto' border='1px solid green'>
+        <Box w='70%' m='auto' >
 
         <Image src={Data.type==='user' ? "https://www.citypng.com/public/uploads/small/11640168385jtmh7kpmvna5ddyynoxsjy5leb1nmpvqooaavkrjmt9zs7vtvuqi4lcwofkzsaejalxn7ggpim4hkg0wbwtzsrp1ldijzbdbsj5z.png" :"https://icon-library.com/images/head-admin-icon-ts3/head-admin-icon-ts3-13.jpg"} alt=""  />
         </Box>

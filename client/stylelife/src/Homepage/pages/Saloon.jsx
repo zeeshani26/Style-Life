@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { saloonofferformendata, saloonofferfortraetmentdata, saloonofferforwomendata, saloonotrendingdata, saloonslider } from '../requireddata';
+import Footer from '../../Footer/Footer';
 
 
 const navbararray=[
@@ -96,7 +97,7 @@ const Saloon = () => {
       <Box className='saloonfacialbox'>
   <Image src="https://img4.nbstatic.in/tr:w-2800/611b71ed40e9df000b81097f.jpg" alt="dis" />
    </Box>
-
+<Footer/>
    </>
   )
 }

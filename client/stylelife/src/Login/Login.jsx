@@ -8,7 +8,7 @@ import SignIn from "./SignIn/SignIn";
 
 import ForgatePassword from "./ForgatePassword/ForgatePassword";
 import ChangePassword from "./ChangePassword/ChangePassword";
-const Login = ({ onClose }) => {
+const Login = ({ onClose, setAdmin }) => {
   const [ButtonTomove, setButtonTomove] = useState(true);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -60,6 +60,7 @@ const Login = ({ onClose }) => {
             HandelChange={HandelChange}
             name={name}
             setPasswordForgate={setPasswordForgate}
+            setAdmin={setAdmin}
           />
         ) : Route_forgate_Chgange ? (
           <ForgatePassword

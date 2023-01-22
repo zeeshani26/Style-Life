@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 
-const ChangePassword = ({email, name, onClose, setRoute_forgate_Chgange }) => {
+const ChangePassword = ({ email, name, onClose, setRoute_forgate_Chgange }) => {
   const [nextBtn, setNextBtn] = useState(true);
   const navigation = useNavigate();
   const [NewPassword, setNewPassword] = useState("");
@@ -15,8 +15,8 @@ const ChangePassword = ({email, name, onClose, setRoute_forgate_Chgange }) => {
   const PostForSignUp = async (data) => {
     try {
       let res = await axios.patch(
-        "https://glorious-bass-poncho.cyclic.app/user/setpass",
-       data
+        "https://nice-ruby-tortoise.cyclic.app/user/setpass",
+        data
       );
       toast({
         position: "top",
@@ -49,8 +49,8 @@ const ChangePassword = ({email, name, onClose, setRoute_forgate_Chgange }) => {
   };
 
   const HandelSubmit = () => {
-    let data  = {email, password:NewPassword}
-     PostForSignUp(data);
+    let data = { email, password: NewPassword };
+    PostForSignUp(data);
   };
 
   return (

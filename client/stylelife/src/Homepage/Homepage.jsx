@@ -8,11 +8,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { brandsdata, nearbydata,nextthingdata,quickstartdata,saloonservicedata,relaxingdata,promocodedata } from './requireddata'
+import Footer from '../Footer/Footer'
 
 
 
   const navbararray=[
-    {src:"https://img4.nbstatic.in/tr:w-/60af2a061e2731000ba1096a.png",alt:"res",text:"Resturent Deals",go:"resturent"},
+    {src:"https://img4.nbstatic.in/tr:w-/60af2a061e2731000ba1096a.png",alt:"res",text:"Restaurant Deals",go:"restaurant"},
     {src:"https://img4.nbstatic.in/tr:w-/639acd9b8db992000bac8a46.png",alt:"res",text:"Buffet Deals",go:"buffet"},
     {src:"https://img4.nbstatic.in/tr:w-/60ac96c840e9df000b6cbf94.png",alt:"res",text:"Salon Deals",go:"saloon"},
     {src:"https://img4.nbstatic.in/tr:w-/60ac96e240e9df000b6cbf95.png",alt:"res",text:"Spa Deals",go:"spa"},
@@ -166,8 +167,8 @@ const Homepage = () => {
   return (
    <>
      <div className='navbardiv'>
-     {navbararray.map((el)=>{
-        return <Box className='navbarbox' onClick={()=>navigate(`/${el.go}`)}>
+     {navbararray.map((el,ind)=>{
+        return <Box className='navbarbox' onClick={()=>navigate(`/${el.go}`)} key={ind}>
             <Image src={el.src} alt={el.alt} />
             <Text>{el.text}</Text>
         </Box>
@@ -175,7 +176,7 @@ const Homepage = () => {
    </div>
 
    <div className='firstcrauser'>
-   <Carousel infiniteLoop autoPlay>
+   <Carousel infiniteLoop autoPlay showThumbs={false}>
    {silderimages.map((el)=>{
     return <div id="sliderimages" key={el.src}>
         <Image src={el.src}  alt="sliding" />
@@ -232,9 +233,9 @@ const Homepage = () => {
     <div className='quickstartbox'>
     <h1 as={"h2"}>Quick Bites</h1>
     <Slider {...quick}>
-    {quickstartdata.map((el)=>{
+    {quickstartdata.map((el,ind)=>{
         return (
-            <div className='quicklogo' key={el.id}>
+            <div className='quicklogo' key={ind}>
                 <Image src={el.logo} alt="brands" />
                
             </div>
@@ -248,9 +249,9 @@ const Homepage = () => {
      <h1>Next Thing on Your Mind!</h1>
      </Box>
       <div className='nextthingbox'>
-        {nextthingdata.map((el)=>{
+        {nextthingdata.map((el,ind)=>{
             return (
-                <Box className='insidenextthing' key={el.id}>
+                <Box className='insidenextthing' key={ind}>
            <Image src={el.logo} />
                 </Box>
             )
@@ -261,9 +262,9 @@ const Homepage = () => {
      <h1>Popular Salon Services</h1>
      </Box>
       <div className='nextthingbox'>
-        {saloonservicedata.map((el)=>{
+        {saloonservicedata.map((el,ind)=>{
             return (
-                <Box className='insidenextthing' key={el.id}>
+                <Box className='insidenextthing' key={ind}>
            <Image src={el.logo} />
            <Text fontSize='xl' as='b'>{el.tag}</Text>
                 </Box>
@@ -307,6 +308,7 @@ const Homepage = () => {
     </Box>
       
       </div>
+      <Footer/>
    </>
   )
 }

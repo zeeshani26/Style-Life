@@ -9,7 +9,7 @@ export const getdata =
     if (sort == "pop") {
       try {
         let res = await axios.get(
-          `https://glorious-bass-poncho.cyclic.app/${cat}/filter?page=${page}&&popular=true&&limit=6`
+          `https://nice-ruby-tortoise.cyclic.app/${cat}/filter?page=${page}&&popular=true&&limit=6`
         );
         dispatch({ type: GET_PRODUCT, payload: res.data });
       } catch (err) {
@@ -18,7 +18,7 @@ export const getdata =
     } else {
       try {
         let res = await axios.get(
-          `https://glorious-bass-poncho.cyclic.app/${cat}/filter?page=${page}&&sort=${val}&limit=6`
+          `https://nice-ruby-tortoise.cyclic.app/${cat}/filter?page=${page}&&sort=${val}&limit=6`
         );
         dispatch({ type: GET_PRODUCT, payload: res.data });
       } catch (err) {
@@ -28,7 +28,7 @@ export const getdata =
 
     // try {
     //   let res = await axios.get(
-    //     `http://localhost:8080/${cat}?_page=${page}&_limit=12&_sort=${sort}&_order=${order}`
+    //     `https://nice-ruby-tortoise.cyclic.app/${cat}?_page=${page}&_limit=12&_sort=${sort}&_order=${order}`
     //   );
 
     //   dispatch({ type: GET_PRODUCT, payload: res.data });
@@ -45,7 +45,7 @@ export const filterdata = (val, page, sort, order, cat) => async (dispatch) => {
   if (sort == "pop") {
     try {
       res = await axios.get(
-        `https://glorious-bass-poncho.cyclic.app/${cat}/filter?page=${page}&&popular=true&&limit=6`
+        `https://nice-ruby-tortoise.cyclic.app/${cat}/filter?page=${page}&&popular=true&&limit=6`
       );
     } catch (err) {
       console.log(err);
@@ -53,14 +53,14 @@ export const filterdata = (val, page, sort, order, cat) => async (dispatch) => {
   } else {
     try {
       res = await axios.get(
-        `https://glorious-bass-poncho.cyclic.app/${cat}/filter?page=${page}&&sort=${v}&limit=6`
+        `https://nice-ruby-tortoise.cyclic.app/${cat}/filter?page=${page}&&sort=${v}&limit=6`
       );
     } catch (err) {
       console.log(err);
     }
   }
   // let res = await axios.get(
-  //   `http://localhost:8080/${cat}?_page=${page}&_limit=30&_sort=${sort}&_order=${order}`
+  //   `https://nice-ruby-tortoise.cyclic.app/${cat}?_page=${page}&_limit=30&_sort=${sort}&_order=${order}`
   // );
   // console.log(val);
   let filtered = res.data.filter((el) => {

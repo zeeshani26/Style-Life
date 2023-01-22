@@ -7,9 +7,10 @@ import { useToast } from "@chakra-ui/react";
 import ForgatePassword from "../ForgatePassword/ForgatePassword";
 import axios from "axios";
 
-const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
+const SignIn = ({ name, HandelChange, onClose, setPasswordForgate, setAdmin }) => {
   const [timer, setTimer] = useState(30);
   const toast = useToast();
+  const [AdminBtn , setAdmBtn] = useState(false)
 
   const [nextBtn, setNextBtn] = useState(true);
 
@@ -21,20 +22,20 @@ const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
   const PostForSignUp = async (data1) => {
     try {
       let res = await axios.post(
-        "https://glorious-bass-poncho.cyclic.app/user/login",
+        "https://nice-ruby-tortoise.cyclic.app/user/login",
         data1
-      );
-
-
-      if (res.data.msg == "login successful") {
+      )
+        console.log(res);
+      if (res.data.msg === "login successful") {
         toast({
           position: "top",
-          title: "User Is Login.",
+          title: "User Is Logged in.",
           description: "Status Success",
           status: "success",
           duration: 5000,
           isClosable: true,
         });
+      console.log("user", res)
       
 
         let obj = {
@@ -48,7 +49,7 @@ const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
         navigation("/");
         onClose();
       }
-      else if(res.data.msg === "Admin login successful"){
+    else if(res.data.msg === "Admin login successful"){
         toast({
           position: "top",
           title: "Admin Login",
@@ -56,17 +57,17 @@ const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
           status: "success",
           duration: 5000,
           isClosable: true,
-        });
-      
+        })
+      setAdmin("Admin")
 
         let obj = {
           name,
           user: email,
           token: res.data.token,
         };
-
+        console.log(obj,"obj");
         localStorage.setItem("StyleLifeAdminData", JSON.stringify(obj));
-
+        setAdmBtn(true);
         navigation("/");
         onClose();
       }

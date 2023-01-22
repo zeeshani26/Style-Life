@@ -1,15 +1,14 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const PrivateRoute = ({children}) => {
-    const navigate = useNavigate()
-    let user = localStorage.getItem("StyleLifeUserData");
+    let user =JSON.parse( localStorage.getItem("StyleLifeAdminData"))|| "";
     console.log(user);
-    if(user){
+    if(user.token){
         return children
     }
     else{
-       return navigate("/")
+       return <Navigate to={'/'}  />
     }
 }
 

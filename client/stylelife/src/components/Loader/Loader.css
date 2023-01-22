@@ -3,10 +3,9 @@
     height: 1em;
     border-radius: 8px;
     background-color: #47a7ff44;
-    position: absolute;
-    top:50%;
-    left:50%;   
     border:1px solid black;
+    margin: auto;
+    margin-top: 23%;
   }
   
   .loader div {

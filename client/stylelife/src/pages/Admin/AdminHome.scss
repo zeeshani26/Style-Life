@@ -1,6 +1,8 @@
 .maindiv{
-    background-image: linear-gradient(to right, white , rgb(49, 48, 48));
     background-color: black;
+    background-image: linear-gradient(to right, white , rgb(49, 48, 48));
+    height: max-content;
+    width:98vw
 }
 .admin_categories{
     width: 100%;
@@ -18,9 +20,11 @@
     border-right: 2px solid black;
         text-align: center;
     margin: auto;
+    background-image: linear-gradient(to right, white , rgb(49, 48, 48));
 }
 .rightbar{
     position: relative ;
-    left: 12%
+    left: 12%;
+
 }
 

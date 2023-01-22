@@ -5,27 +5,23 @@ import OrderSummary from "./pages/OrderSummary/OrderSummary";
 import PaymentOption from "./pages/PaymentOption/PaymentOption";
 import { PaymentSucces } from "./PaymentSucces/PaymentSucces";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../Footer/Footer";
 const PaymentPage = () => {
   const [CartData, setCartData] = useState([]);
   const [orderPlace, setOrderPlace] = useState(false);
   const navigation = useNavigate();
 
-
   const GetCartData = async () => {
-
-    let token = JSON.parse(localStorage.getItem("StyleLifeUserData")) || ""
+    let token = JSON.parse(localStorage.getItem("StyleLifeUserData")) || "";
 
     console.log(token.token);
 
     try {
-      let res = await axios.get(
-        "https://glorious-bass-poncho.cyclic.app/cart/",
-        {
-          headers: {
-            authorization: token.token,
-          },
-        }
-      );
+      let res = await axios.get("https://nice-ruby-tortoise.cyclic.app/cart/", {
+        headers: {
+          authorization: token.token,
+        },
+      });
       setCartData(res.data);
     } catch (err) {
       console.log(err, "errr");
@@ -34,23 +30,26 @@ const PaymentPage = () => {
 
   useEffect(() => {
     GetCartData();
-    let token = JSON.parse(localStorage.getItem("StyleLifeUserData")) || ""
-    if(token == ""){
-      navigation("/")
+    let token = JSON.parse(localStorage.getItem("StyleLifeUserData")) || "";
+    if (token == "") {
+      navigation("/");
     }
 
-    console.log(token, "token")
-
+    console.log(token, "token");
   }, []);
-
 
   return (
     <>
       {orderPlace ? (
         <PaymentSucces />
       ) : (
-        <Box mt={["5rem", "0px", "0px"]} pb="2rem"  bg="#e1e9ec" display={["grid", "grid", "flex"]}>
-          <Box >
+        <Box
+          mt={["5rem", "0px", "0px"]}
+          pb="2rem"
+          bg="#e1e9ec"
+          display={["grid", "grid", "flex"]}
+        >
+          <Box>
             <OrderSummary CartData={CartData} />
           </Box>
           <Box ml="3rem">
@@ -80,6 +79,7 @@ const PaymentPage = () => {
           </Text>
         </Box>
       </Box>
+      <Footer />
     </>
   );
 };

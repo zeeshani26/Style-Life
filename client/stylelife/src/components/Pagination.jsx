@@ -5,7 +5,7 @@ const Pagination = ({ count, currentPage, updateCurrentPage }) => {
   let arr = new Array(count).fill(0);
 
   return (
-    <div style={{ display: "flex", gap: "20px" }}>
+    <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
       <button
         disabled={currentPage === 1}
         onClick={() => updateCurrentPage(currentPage - 1)}

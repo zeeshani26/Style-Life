@@ -3,11 +3,13 @@ import React, { useEffect, useState } from "react";
 import { useToast } from "@chakra-ui/react";
 import "./SingleProduct.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const SingleProduct = () => {
   const getCart = async () => {
     let res = await axios
-      .get(`https://glorious-bass-poncho.cyclic.app/restro/cart`)
+      .get(`https://nice-ruby-tortoise.cyclic.app/restro/cart`)
       .then((res) => {
         setCart([...cart, res.data]);
         console.log(res.data);
@@ -17,7 +19,7 @@ const SingleProduct = () => {
 
   const postCart = async (restroId, dealid) => {
     await axios
-      .post(`https://glorious-bass-poncho.cyclic.app/restro/cart/add`, {
+      .post(`https://nice-ruby-tortoise.cyclic.app/restro/cart/add`, {
         restroId: restroId,
         dealId: dealid,
       })
@@ -27,22 +29,25 @@ const SingleProduct = () => {
   const toast = useToast();
   const [cart, setCart] = useState([]);
   const [restroId, setRestroId] = useState("");
-  const [dealid, setDealid] = useState("");
+  const [dealid, setDealid] = useState([]);
   const [total, setTotal] = useState(0);
+  const navigate = useNavigate();
   let product = JSON.parse(localStorage.getItem("product"));
+  let user = JSON.parse(localStorage.getItem("StyleLifeUserData")) || {};
   // console.log(product);
   useEffect(() => {
     product = JSON.parse(localStorage.getItem("product")) || {};
-    setRestroId(product);
-  }, []);
-
-  console.log(product,"product")
+    user = JSON.parse(localStorage.getItem("StyleLifeUserData")) || {};
+    setRestroId(product._id);
+  }, [product, total, cart]);
 
   const handleAdd = async (e) => {
     // console.log(e);
-    setDealid(e._id);
+    document.getElementById(e._id).disabled = true;
+    setDealid([...dealid, e._id]);
+
     let pri = e.price.split(",").join("");
-    e.price = Number(pri);
+    let price = Number(pri);
     toast({
       title: "Item Added.",
       description: "Use Cart to Checkout",
@@ -50,16 +55,62 @@ const SingleProduct = () => {
       duration: 5000,
       isClosable: true,
     });
-    postCart(restroId, dealid);
-    getCart();
+    // postCart(restroId, dealid);
+    // getCart();
+    // [{name: restroname, image:restroimage, address:restroaddress, productname:name,price:price,total:total}]
     // let res = await getCart();
     // console.log(res);
     // setCart(res);
-
-    // setTotal(total + Number(pri));
+    let newTotal = total + Number(pri);
+    setTotal(newTotal);
+    let obj = {
+      name: product.name,
+      address: product.address,
+      image: product.img_src,
+      productname: e.name,
+      price: price,
+      total: newTotal,
+    };
+    console.log(obj);
+    setCart([...cart, obj]);
   };
-  console.log("DealID:", dealid, "RestroID:", restroId);
-  console.log(cart);
+
+  const handleCheck = () => {
+    console.log("Checked out", user);
+    if (user == undefined) {
+      toast({
+        position: "top",
+        title: "Please Login First !!",
+        description: "User Not Authenticated",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
+      });
+    } else if (cart.length && user !== undefined) {
+      if (user != undefined) {
+        localStorage.setItem("cartData", JSON.stringify(cart));
+        console.log(cart);
+        navigate("/payment");
+      }
+    } else {
+      toast({
+        position: "top",
+        title: "Please Add an Item in Cart",
+        description: "Cart is Empty !",
+        status: "warning",
+        duration: 3000,
+        isClosable: true,
+      });
+    }
+  };
+  const handleRemove = () => {
+    console.log("removed all items");
+    dealid.forEach((item) => {
+      document.getElementById(item).disabled = false;
+    });
+    setTotal(0);
+    setCart([]);
+  };
   return (
     <Box className="main">
       <Box className="first">
@@ -143,7 +194,7 @@ const SingleProduct = () => {
                         fontSize="13px"
                         fontWeight="600"
                       >
-                        {Math.floor(Math.random() * 1000)} Bought
+                        {ele.bought}
                       </Text>
                     </Box>
                     <Box>
@@ -235,6 +286,8 @@ const SingleProduct = () => {
                             Inc. of all taxes
                           </Text>
                           <Button
+                            id={ele._id}
+                            name="all_add"
                             colorScheme={"red"}
                             mt={"20px"}
                             loadingText="Adding"
@@ -296,32 +349,42 @@ const SingleProduct = () => {
                       <Box display={"flex"} justifyContent="space-between">
                         <Box
                           className="itemName"
-                          fontSize={"13px"}
+                          fontSize={{ base: "7px", md: "9px", lg: "13px" }}
                           fontWeight="400"
                           color="RGB(51, 51, 51)"
                         >
-                          {e.name}
+                          {e.productname}
                         </Box>
+
                         <Box
+                          className="itemPrice"
+                          fontSize={{ base: "8px", md: "10px", lg: "14px" }}
+                          fontWeight="700"
+                          color={"#515151"}
+                        >
+                          ₹{e.price}
+                        </Box>
+                        {/* <Box
                           className="itemQty"
                           fontSize={"14px"}
                           fontWeight="400"
                           color={"RGB(51, 51, 51)"}
                         >
                           x 1
-                        </Box>
-                        <Box
-                          className="itemPrice"
-                          fontSize={"14px"}
-                          fontWeight="700"
-                          color={"#515151"}
-                        >
-                          ₹{e.price}
-                        </Box>
+                        </Box> */}
                       </Box>
                     ))
                   ) : (
-                    <Text>Add Items</Text>
+                    <Text
+                      fontSize={{
+                        base: "10px",
+                        sm: "14px",
+                        md: "15px",
+                        lg: "20px",
+                      }}
+                    >
+                      Add Items
+                    </Text>
                   )}
                 </Box>
                 <Box width="80%" margin="auto" border="1px solid #dbdbdb"></Box>
@@ -359,19 +422,42 @@ const SingleProduct = () => {
                 <Button
                   colorScheme={"red"}
                   loadingText="Moving"
-                  pl={{ base: "0%", md: "30%", lg: "39%" }}
-                  pr={{ base: "0%", md: "30%", lg: "39%" }}
+                  pl={{ base: "10%", md: "25%", lg: "35%" }}
+                  pr={{ base: "10%", md: "25%", lg: "35%" }}
+                  mb="10px"
                   fontWeight={"700"}
                   fontSize={{
-                    base: "12px",
+                    base: "10px",
                     sm: "14px",
                     md: "15px",
                     lg: "16px",
                   }}
                   fontFamily={"Open Sans sans-serif"}
                   borderRadius="3px"
+                  onClick={() => handleCheck()}
                 >
                   BUY NOW
+                </Button>
+                <Button
+                  colorScheme={"red"}
+                  loadingText="Moving"
+                  pl={{ base: "1%", md: "5%", lg: "10%" }}
+                  pr={{ base: "1%", md: "5%", lg: "10%" }}
+                  pt="0px"
+                  pb="0px"
+                  fontWeight={"700"}
+                  mb="10px"
+                  fontSize={{
+                    base: "10px",
+                    sm: "12px",
+                    md: "13px",
+                    lg: "14px",
+                  }}
+                  fontFamily={"Open Sans sans-serif"}
+                  borderRadius="3px"
+                  onClick={() => handleRemove()}
+                >
+                  Remove Items
                 </Button>
                 <Text
                   fontFamily={"Open Sans"}
@@ -454,13 +540,13 @@ const SingleProduct = () => {
               <Flex justifyContent={"space-between"} mt="14px">
                 <Text
                   color={"RGB(102, 102, 102)"}
-                  fontSize="12px"
+                  fontSize={{ base: "8px", sm: "10px", md: "12px" }}
                   fontWeight={"600"}
                 >
                   Valid till 02 Feb 2023
                 </Text>
                 <Text
-                  fontSize={"12px"}
+                  fontSize={{ base: "8px", sm: "10px", md: "12px" }}
                   fontWeight="600"
                   color={"RGB(239, 83, 78)"}
                 >
@@ -469,9 +555,9 @@ const SingleProduct = () => {
               </Flex>
             </Box>
           </Box>
-          {/* nOT HERE */}
         </Box>
       </Box>
+      <Footer />
     </Box>
   );
 };

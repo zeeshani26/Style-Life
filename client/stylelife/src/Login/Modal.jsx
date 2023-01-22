@@ -16,6 +16,7 @@ import Login from "./Login";
 const ModalLogin = ({ title }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [UserLogin, setUserLogin] = useState(false);
+  const [Admin, setAdmin] = useState("")
   const navigate = useNavigate()
   useEffect(() => {
     let token = JSON.parse(localStorage.getItem("StyleLifeUserData")) || "";
@@ -30,14 +31,20 @@ const ModalLogin = ({ title }) => {
   const HandelLogOut = () => {
     setUserLogin(true);
     localStorage.removeItem("StyleLifeUserData");
+    localStorage.removeItem("StyleLifeAdminData");
+
     navigate("/")
   };
 
   return (
-    <>
+   <>
+    <Button>
       {UserLogin ? (
         <>
-          <Button bg="none" w="auto" onClick={onOpen}>
+          <Button bg="none" w="auto" onClick={()=>{
+            onOpen();
+           
+          }}>
             {title == "yes" ? (
               <Image
                 src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png"
@@ -45,10 +52,10 @@ const ModalLogin = ({ title }) => {
                 style={{ height: "25px" }}
               />
             ) : (
-              title
+            title
             )}
           </Button>
-
+       
           <Modal isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
             <ModalContent
@@ -60,15 +67,21 @@ const ModalLogin = ({ title }) => {
             >
               <ModalCloseButton />
               <ModalBody>
-                <Login onClose={onClose} />
+               
+                <Login setAdmin={setAdmin} onClose={onClose} />
               </ModalBody>
             </ModalContent>
           </Modal>
         </>
       ) : (
+       <Button>
         <Button onClick={HandelLogOut}>Logout</Button>
+       
+        </Button>
       )}
-    </>
+    </Button>
+   <Button display={Admin=="" ? 'none' : 'block'} onClick={()=>navigate("/admin")}>{Admin == "" ? "" :  Admin}</Button>
+   </>
   );
 };
 

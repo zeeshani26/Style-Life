@@ -7,12 +7,8 @@ import { AddHealth } from "./Redux/Admin/AdminTypes";
 function App() {
   return (
     <div className="App">
-
-
-      <Navbar />
+      <Navbar/>
 <Homepageroutes/>
-{/* <Footer/> */}
-{/* <AdminHome/> */}
     </div>
   );
 }

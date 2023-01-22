@@ -82,7 +82,7 @@ const handleHealthPost = (e)=>{
 }
 
   return (
-    <Flex className='maindiv'>
+    <Flex className='maindiv' >
     <Box w='25%' h='100vh' className='sidebar'>
     <Text fontWeight={'bold'} fontSize='lg' mb='2rem'>DashBoard</Text>
     <Box display={'flex'} flexDirection='column'>
@@ -120,18 +120,13 @@ const handleHealthPost = (e)=>{
        
 <ButtonGroup w={"100%"} isAttached variant='outline'>
 <Button className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}} onClick={handleUser}>Users</Button>
-  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnHealthOpen} />
-</ButtonGroup>
+  </ButtonGroup>
 
-<ButtonGroup w={"100%"} isAttached variant='outline'>
-<Button className='admin_categories' fontSize={{base:"xx-small",sm:"sm",md:"md"}}>Stats</Button>
-  <IconButton aria-label='Add to friends' icon={<AddIcon />} onClick={OnHealthOpen} />
-</ButtonGroup>
-        
+
         
     </Box>
     </Box>
-    {AdminLoading ? <Loader/> : <Box w='72%' m='auto' className='rightbar'>
+     <Box w='72%' m='auto' className='rightbar' >
     <Text fontSize={'lg'} fontWeight='bold' fontStyle={'italic'}>{restValue ? "Restaurants" : spaValue ? "Spa" : "Health"}</Text>
     <Grid className='divide-section' w='full' templateColumns={{sm:"repeat(2,1fr)",md:"repeat(3,1fr)"}} gap='1rem' padding='1rem' >
 
@@ -144,7 +139,7 @@ const handleHealthPost = (e)=>{
     }
 
     </Grid>
-    </Box>}
+    </Box>
     {/* for restro adding */}
     <Modal isOpen={isRestroOpen} onClose={onRestroClose}>
         <ModalOverlay />
@@ -163,7 +158,7 @@ const handleHealthPost = (e)=>{
               <Input type="text" placeholder='name' required onChange={(e)=>setRestroAddImg(e.target.value)} />
               <label htmlFor="">Offers</label>
               <Input type="text" placeholder='name' required onChange={(e)=>setRestroAddOffers(e.target.value)} />
-              <Input type={'submit'}  />
+              <Input type={'submit'} value='Add' bgColor={'green.500'} w='50%' m='auto' mt='1rem'/>
             </form>
           </ModalBody>
 
@@ -171,9 +166,7 @@ const handleHealthPost = (e)=>{
             <Button colorScheme='blue' mr={3} onClick={onRestroClose}>
               Close
             </Button>
-            <Button colorScheme='blue' mr={3} onClick={onRestroClose}>
-              Add
-            </Button>
+          
           </ModalFooter>
         </ModalContent>
       </Modal>
@@ -196,16 +189,13 @@ const handleHealthPost = (e)=>{
               <Input type="text" placeholder='name' required onChange={(e)=>setSpaAddImg(e.target.value)} />
               <label htmlFor="">Category</label>
               <Input type="text" placeholder='name' required onChange={(e)=>setSpaAddOffers(e.target.value)} />
-              <Input type={'submit'}  />
+              <Input type={'submit'}  value='Add' bgColor={'green.500'} w='50%' m='auto' mt='1rem' />
             </form>
           </ModalBody>
 
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={onSpaClose}>
               Close
-            </Button>
-            <Button colorScheme='blue' mr={3} onClick={onSpaClose}>
-              Add
             </Button>
           </ModalFooter>
         </ModalContent>
@@ -229,7 +219,7 @@ const handleHealthPost = (e)=>{
               <Input type="text" placeholder='name' required onChange={(e)=>setHealthAddImg(e.target.value)} />
               <label htmlFor="">Category</label>
               <Input type="text" placeholder='name' required onChange={(e)=>setHealthAddOffers(e.target.value)} />
-              <Input type={'submit'} value='Add' colorScheme={'green'} w='50%' mt='1rem' ml='auto' mr='auto' bg={'green.400'} />
+              <Input type={'submit'}  value='Add' bgColor={'green.500'} w='50%' m='auto' mt='1rem'/>
             </form>
           </ModalBody>
 

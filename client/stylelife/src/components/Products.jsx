@@ -20,6 +20,7 @@ import { filterdata, getdata } from "../Redux/products/Prodaction";
 import { StarIcon } from "@chakra-ui/icons";
 import Pagination from "./Pagination";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const smVariant = { navigation: "drawer", navigationButton: true };
 const mdVariant = { navigation: "sidebar", navigationButton: false };
@@ -83,6 +84,7 @@ const Products = ({ category }) => {
         marginBottom={"2%"}
         marginTop={"2%"}
         backgroundColor="#E1E9EC"
+        pb="20px"
       >
         <Sidebar
           variant={variants?.navigation}
@@ -117,11 +119,6 @@ const Products = ({ category }) => {
 
           {products.data.length === 0 && products.loading == false && (
             <Box>
-              {/* <Image
-                boxSize="400px"
-                m="auto"
-                src="https://upload.wikimedia.org/wikipedia/commons/2/22/Sad.gif"
-              /> */}
               <Heading>
                 Results not found for this Location. Please Select Another
               </Heading>
@@ -142,6 +139,7 @@ const Products = ({ category }) => {
                 backgroundColor={"white"}
                 key={el._id}
                 onClick={() => tolocal(el)}
+                borderRadius={"20px"}
               >
                 {/* <Link to={`/${el._id}`}> */}
                 <Box className="eldiv" textAlign="center" pr="20px" pl="20px">
@@ -268,6 +266,7 @@ const Products = ({ category }) => {
           </Box>
         </Box>
       </Box>
+      <Footer/> 
     </>
   );
 };

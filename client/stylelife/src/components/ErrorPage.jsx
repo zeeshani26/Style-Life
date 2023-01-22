@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import "./ErrorPage.css"
 const ErrorPage = () => {
   return (
@@ -31,13 +32,15 @@ const ErrorPage = () => {
         <p class="message__text">We're sorry, the page you were looking for isn't found here. The link you followed may either be broken or no longer exists. Please try again, or take a look at our.</p>
       </div>
       <div class="error__nav e-nav">
-        <a href="" target="_blanck" class="e-nav__link"></a>
+        <a href="/" target="_blanck" class="e-nav__link"></a>
       </div>
     </div>
   
   </section>
   
-    </a></div>
+    </a>
+    <Footer/>
+    </div>
   )
 }
 

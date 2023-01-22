@@ -24,10 +24,10 @@ const ForgatePassword = ({ setPasswordForgate, setRoute_forgate_Chgange }) => {
   const GetForCheckUser = async (data1) => {
     try {
       let res = await axios.get(
-        "https://glorious-bass-poncho.cyclic.app/user/forgot",
+        "https://nice-ruby-tortoise.cyclic.app/user/forgot",
         data1
       );
-      console.log(res)
+      console.log(res);
       return res.data.user;
     } catch (err) {
       console.log(err, "errr");

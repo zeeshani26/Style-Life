@@ -26,7 +26,9 @@ import {
 export default function Footer() {
   return (
     <Box
-      bg="#F0F1F2"
+      bg="black"
+      color='white'
+    mt='1rem'
       width={"full"}
       paddingLeft={"3rem"}
       paddingRight={"3rem"}
@@ -64,7 +66,7 @@ export default function Footer() {
 
           <Stack align={"flex-start"} fontSize={".85rem"} fontWeight={"500"} ml={{base: 0, sm: '0', md: '0',lg:'-8rem'}}>
             <Text fontWeight={"600"} fontSize={"1rem"}>
-            About nearby
+            About Style Life
             </Text>
 
             <Link href={"#"}>Our Story</Link>
@@ -94,17 +96,17 @@ export default function Footer() {
                 borderRadius={"none"}
                 fontSize=".8rem"
                 h={"2rem"}
-                border={"1px solid black"}
+                border={"1px solid white"}
               />
               <Button
-                bg={"black"}
+                bg={"white"}
                 h="2rem"
                 w="5rem"
                 fontWeight={"500"}
                 padding=".8rem"
                 fontSize={{base: '.7rem', sm: '.7rem', md: '0.7rem',lg:'.8rem'}}
                 border="none"
-                color="white"
+                color="black"
                 borderRadius={"none"}
               >
                 SIGN UP
@@ -134,7 +136,7 @@ export default function Footer() {
          
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"left"}>
-          © 2022 The Vintage Attire
+          © 2023 Style Life
         </Text>
       </Box>
     </Box>

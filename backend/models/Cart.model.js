@@ -1,24 +1,32 @@
 const mongoose = require('mongoose');
 
 const CartSchema = mongoose.Schema({
-    userId:{
+    userID:{
         type:String,
     },
-    restroId:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"rest"
+    restro:{
+     type:{
+        name:String,
+        offers:String,
+        rating:String,
+        img_src:String,
+        bought:String,
+        address:String
+     }
     },
-    dealsId:{
+    deals:{
         type:[
             {
-                deals:String
+                name:String,
+                tag:String,
+                bought:String,
+                discount:String,
+                price:String,
+                discouted_price:String,
             }
         ]
     },
-    count:{
-        type:Number,
-        default:1
-    }
+
 
 });
 

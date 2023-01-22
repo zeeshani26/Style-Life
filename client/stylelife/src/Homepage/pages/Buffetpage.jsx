@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "../css/buffetpage.css"
-
+import Footer from "../../Footer/Footer";
 const navbararray=[
   {src:"https://img4.nbstatic.in/tr:w-/60ac96c840e9df000b6cbf94.png",alt:"res",text:"Saloon Deals",go:"saloon"},
   {src:"https://img4.nbstatic.in/tr:w-/60ac96e240e9df000b6cbf95.png",alt:"res",text:"Spa Deals",go:"spa"}
@@ -53,11 +53,10 @@ const Buffetpage = () => {
   };
   return (
    <>
-    <div className='resnavbardiv'>
+    <div className='resnavbardiv' style={{display:"flex",justifyContent:"space-around"}}>
      {navbararray.map((el)=>{
-        return <Box className='resnavbarbox' onClick={()=>navigate(`/${el.go}`)}>
+        return <Box className='resnavbarbox' onClick={()=>navigate(`/${el.go}`)} >
             <Image src={el.src} alt={el.alt} />
-            <Text>{el.text}</Text>
         </Box>
      })}
    </div>
@@ -128,7 +127,7 @@ const Buffetpage = () => {
     </Slider>
       
       </div>
-      
+      <Footer/>
    </>
   )
 }

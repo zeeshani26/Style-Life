@@ -105,7 +105,7 @@ const OrderSummary = ({ CartDataid }) => {
             <Text>Subtotal (Qty. {cartData.length})</Text>
           </Box>
           <Spacer />
-          <Box>$ {cartData[0].total}</Box>
+          <Box>$ {cartData[cartData.length-1].total}</Box>
         </Flex>
 
         <Divider mb="8px" />
@@ -130,7 +130,7 @@ const OrderSummary = ({ CartDataid }) => {
           <Box>Total</Box>
           <Spacer />
           <Box>
-            <Text>$ {Number(cartData[0].total) + 20}</Text>
+            <Text>$ {Number(cartData[cartData.length-1].total) + 20}</Text>
             <Text color="blue.500">You save 20%</Text>
             <Text color="blue.500">Inclusive of all taxes</Text>
           </Box>

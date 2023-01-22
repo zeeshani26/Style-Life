@@ -57,7 +57,7 @@ const SidebarContent = ({
         textAlign="left"
         fontSize="15px"
         cursor="pointer"
-        marginTop="45px"
+        marginTop="85px"
       >
         <Box
           backgroundColor={"white"}
@@ -161,83 +161,107 @@ const SidebarContent = ({
                       norm();
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       All
                     </Text>
                   </Box>
+                  <hr />
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val1, page, sort, order, category));
                       tognormal(val1);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val1}
                     </Text>
                   </Box>
+                  <hr />
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val2, page, sort, order, category));
                       tognormal(val2);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val2}
                     </Text>
                   </Box>
+                  <hr />
+
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val3, page, sort, order, category));
                       tognormal(val3);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val3}
                     </Text>
                   </Box>
+                  <hr />
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val4, page, sort, order, category));
                       tognormal(val4);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val4}
                     </Text>
                   </Box>
+                  <hr />
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val5, page, sort, order, category));
                       tognormal(val5);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val5}
                     </Text>
                   </Box>
+                  <hr />
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val6, page, sort, order, category));
                       tognormal(val6);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val6}
                     </Text>
                   </Box>
+                  <hr />
                   <Box
                     onClick={() => {
                       dispatch(filterdata(val7, page, sort, order, category));
                       tognormal(val7);
                       onClick();
                     }}
+                    mt="10px"
+                    mb="10px"
                   >
                     <Text className="hovereffect" color="grey">
                       {val7}
