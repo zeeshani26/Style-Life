@@ -148,7 +148,7 @@ const Products = ({ category }) => {
                   <Image
                     m="auto"
                     mt="18px"
-                    src={el.img_src}
+                    src={category === "health" ? el.img : el.img_src}
                     width="100%"
                     height="160px"
                     alt="title"

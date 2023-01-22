@@ -9,8 +9,6 @@ import AllRoutes from "./Pages/AllRoutes";
 
 import AdminHome from "./Pages/Admin/AdminHome";
 
-
-
 function App() {
   return (
     <div className="App">
@@ -23,15 +21,19 @@ function App() {
       {/* Navigation bar here */}
       {/* <Footer /> */}
 
-      {/* <Navbar /> */}
+
+      <Navbar />
+      <AllRoutes />
+      <Homepageroutes />
       {/* <Homepageroutes /> */}
 
-      {/* Navigation bar here */}
-      {/* <AllRoutes /> */}
-       {/* <AllRoutes /> */}
+      <Footer />
+      {/* <Navbar /> */}
+      {/* <Homepageroutes /> */}
        <AdminHome/>
        {/* <AllRoutes /> */}
 
+       <AllRoutes />
     </div>
   );
 }
