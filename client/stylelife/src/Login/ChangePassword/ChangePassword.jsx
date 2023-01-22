@@ -14,8 +14,8 @@ const ChangePassword = ({email, name, onClose, setRoute_forgate_Chgange }) => {
 
   const PostForSignUp = async (data) => {
     try {
-      let res = await axios.post(
-        "https://glorious-bass-poncho.cyclic.app/user/changepassword",
+      let res = await axios.patch(
+        "https://glorious-bass-poncho.cyclic.app/user/setpass",
        data
       );
       toast({
@@ -49,8 +49,8 @@ const ChangePassword = ({email, name, onClose, setRoute_forgate_Chgange }) => {
   };
 
   const HandelSubmit = () => {
-    let data  = {email, NewPassword}
-    PostForSignUp(data);
+    let data  = {email, password:NewPassword}
+     PostForSignUp(data);
   };
 
   return (

@@ -1,3 +1,4 @@
+import PaymentPage from "./Add To Cart/PaymentPage/PaymentPage";
 import "./App.css";
 import Footer from "./Footer/Footer";
 
@@ -15,6 +16,15 @@ function App() {
     <div className="App">
       <Navbar/>
       {/* <Homepageroutes /> */}
+      {/* <Homepageroutes /> */}
+      {/* Navigation bar here */}
+      {/* <Footer /> */}
+
+
+      <Navbar />
+      <Homepageroutes />
+
+      <Footer />
     </div>
   );
 }

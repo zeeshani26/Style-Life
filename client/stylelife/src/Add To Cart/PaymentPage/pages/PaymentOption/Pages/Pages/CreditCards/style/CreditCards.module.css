@@ -1,0 +1,14 @@
+
+
+.mainBox > div{
+    margin-bottom: 15px;
+}
+
+.mainBox > div > div{
+    margin-bottom: 15px;
+}
+
+
+.inputcvv{
+    background-position-x: 70px;  
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import Products from "../Components/Products";
 
 // import Products from "../Components/Products";
@@ -7,6 +8,7 @@ import SignIn from "../Login/SignIn/SignIn";
 import SignUp from "../Login/SignUp/SignUp";
 
 import SingleProduct from "../Components/SingleProduct";
+
 
 const AllRoutes = () => {
   return (
@@ -25,6 +27,7 @@ const AllRoutes = () => {
         />
         <Route path="/spaproducts" element={"<Products category=`spa` />"} />
         <Route path="/ProductDetails" element={"SIngle Product Page"} />
+
         <Route path="/login" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
 
