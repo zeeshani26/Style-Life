@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import PaymentPage from "../Add To Cart/PaymentPage/PaymentPage";
 import Products from "../components/Products";
 
 const AllRoutes = () => {
@@ -18,6 +19,9 @@ const AllRoutes = () => {
         />
         <Route path="/spaproducts" element={"<Products category=`spa` />"} />
         <Route path="/ProductDetails" element={"SIngle Product Page"} />
+        <Route path="/PaymentPage" element={<PaymentPage />} />
+
+
       </Routes>
     </div>
   );

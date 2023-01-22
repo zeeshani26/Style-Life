@@ -1,7 +1,7 @@
 import { Box, Text, Image, Button } from "@chakra-ui/react";
 import React from "react";
 
-export const Paytm = () => {
+export const Paytm = ({setOrderPlace}) => {
   return (
     <Box>
       <Box m="10px" justifyContent={"flex-start"} display='grid'>
@@ -12,7 +12,7 @@ export const Paytm = () => {
       </Box>
 
       <Box m="30px" justifyContent={"flex-start"} display="grid">
-        <Button _hover={"none"} borderRadius={"0px"} bg="#ef534e">
+        <Button onClick={()=>setOrderPlace(true)} _hover={"none"} borderRadius={"0px"} bg="#ef534e">
           Pay Now
         </Button>
       </Box>

@@ -6,32 +6,57 @@ import {
   Text,
   Heading,
   Image,
+  Button,
+  useToast,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { json, useNavigate } from "react-router-dom";
 import style from "./styles/OrderSummary.module.css";
 
-const OrderSummary = () => {
-  let obj = {
-    imgUrl: "https://img4.nbstatic.in/tr:w-350/5ffed18ac2e889000b575bed.jpg",
-    rating: 4.6,
-    title: "Lotus Cafe - JW Marriott Mumbai Juhu",
-    text: "Juhu Road, Juhu",
-    bougth: 1158,
-    dealse: { text: "Buffet Offer", price: 2558 },
-    address: "Juhu Road, JW Marriott, Juhu Tara Road, Mumbai",
-    phoneNo: "+91 7715098322, +91 9833710363",
-    singlePageImage: [
-      "https://img4.nbstatic.in/tr:w-500/5ffed18ac2e889000b575bed.jpg",
-      "https://img4.nbstatic.in/tr:w-500/5ffecfb6c2e889000b575be9.jpg",
-      "https://img4.nbstatic.in/tr:w-500/5ffed1b2e1ecca000b032b78.jpg",
-      "https://img4.nbstatic.in/tr:w-500/5ffd323bc2e889000b5756b1.jpg",
-    ],
-    id: 9099433416907.688,
-  };
+const OrderSummary = ({ CartDataid }) => {
+
+
+
+localStorage.setItem("cartData", JSON.stringify([{
+  image: "https://img4.nbstatic.in/tr:w-350/5ffed18ac2e889000b575bed.jpg",
+  productname: "Lotus Cafe - JW Marriott Mumbai Juhu",
+  name: "Juhu Road, Juhu",
+  address: "Juhu Road, JW Marriott, Juhu Tara Road, Mumbai",
+  total: 1564,
+  price:15,
+  id: 9099433416907.688,
+}]))
+
+
+
+
+
+
+
+
+  let cartData = JSON.parse(localStorage.getItem("cartData")) || "null";
+  const toast = useToast();
+  const navigation = useNavigate();
+  const [List, setList] = useState(true);
+
+  if (cartData == "null") {
+    navigation("/");
+    toast({
+      position: "top",
+      title: "Your Cart is Empty Please Add Product.",
+      status: "error",
+      duration: 5000,
+      isClosable: true,
+    });
+    return;
+  }
 
   return (
     <>
       <Box
+        h={List ? "15rem" : "auto"}
+        overflow={"hidden"}
         className={style.summaryBox}
         m="1rem"
         p="1rem"
@@ -55,38 +80,50 @@ const OrderSummary = () => {
           {" "}
           <Flex>
             <Box>
-              <Image w="50px" src={obj.imgUrl} />
+              <Image w="50px" src={cartData[0].image} />
             </Box>
             <Box>
-              <Text>{obj.title}</Text>
-              <Text>{obj.address}</Text>
+              <Text>{cartData[0].name}</Text>
+              <Text>{cartData.address}</Text>
             </Box>
           </Flex>
         </Box>
         <Divider mb="8px" />
 
-        <Box className={style.summaryBox}>
-          <Box>
-            {" "}
-            <Text display={"flex"} justifyContent={"flex-start"}>
-              {obj.dealse.text}
-            </Text>
-          </Box>
-          <Flex>
-            <Box>Qty 1</Box>
-            <Spacer />
-            <Box>$ 750</Box>
-          </Flex>
-        </Box>
+        {cartData.map((ele) => {
+          return (
+            <Box pt="5px" className={style.summaryBox} borderTop="1px solid">
+              <Box>
+                {" "}
+                <Text display={"flex"} justifyContent={"flex-start"}>
+                  {ele.productname}
+                </Text>
+              </Box>
+              <Flex>
+                <Box>$ {ele.price}</Box>
+                <Spacer />
+                <Box>(Qty. 1)</Box>
+              </Flex>
+            </Box>
+          );
+        })}
       </Box>
 
-      <Box className={style.summaryBox} m="1rem" p="1rem" bg="white" borderRadius={"3px"}>
+      <Button onClick={() => setList(!List)}>{List ? "↓" : "↑"}</Button>
+
+      <Box
+        className={style.summaryBox}
+        m="1rem"
+        p="1rem"
+        bg="white"
+        borderRadius={"3px"}
+      >
         <Flex>
           <Box>
-            <Text>Subtotal (Qty. 1)</Text>
+            <Text>Subtotal (Qty. {cartData.length})</Text>
           </Box>
           <Spacer />
-          <Box>$ 750</Box>
+          <Box>$ {cartData[0].total}</Box>
         </Flex>
 
         <Divider mb="8px" />
@@ -111,12 +148,11 @@ const OrderSummary = () => {
           <Box>Total</Box>
           <Spacer />
           <Box>
-            <Text>$ 770</Text>
-            <Text color="blue.500" >You save 900</Text>
+            <Text>$ {Number(cartData[0].total) + 20}</Text>
+            <Text color="blue.500">You save 20%</Text>
             <Text color="blue.500">Inclusive of all taxes</Text>
           </Box>
         </Flex>
-
       </Box>
     </>
   );

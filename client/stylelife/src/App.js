@@ -1,3 +1,4 @@
+import PaymentPage from "./Add To Cart/PaymentPage/PaymentPage";
 import "./App.css";
 
 import Homepageroutes from "./Homepage/Routes/homepageroutes";
@@ -10,7 +11,6 @@ function App() {
     <div className="App">
       <Navbar />
       {/* <Homepageroutes /> */}
-
       {/* Navigation bar here */}
        <AllRoutes />
     </div>

@@ -3,17 +3,14 @@ import React, { useEffect, useState } from "react";
 import ReCapture from "../pages/reCapture/reCapture";
 import style from "./style/ForgatePassword.module.css";
 import { useToast } from "@chakra-ui/react";
+import axios from "axios";
 
-
-const ForgatePassword = ({
-  setPasswordForgate,
-  setRoute_forgate_Chgange,
-}) => {
+const ForgatePassword = ({ setPasswordForgate, setRoute_forgate_Chgange }) => {
   const [timer, setTimer] = useState(30);
   const [OtpValidBoolean, setOtpValidBoolean] = useState(false);
   const [nextBtn, setNextBtn] = useState(true);
   const [otp, setotp] = useState("");
-  const [email, setEmail] = useState("")
+  const [email, setEmail] = useState("");
   const [TimerShow, setTimerShow] = useState(false);
 
   const toast = useToast();
@@ -24,14 +21,57 @@ const ForgatePassword = ({
     }
   };
 
-  const HandelSubmit = () => {
-    if (otp == "1234") {
-      setRoute_forgate_Chgange(false);
+  const GetForCheckUser = async (data1) => {
+    try {
+      let res = await axios.get(
+        "https://glorious-bass-poncho.cyclic.app/user/forgot",
+        data1
+      );
+      console.log(res)
+      return res.data.user;
+    } catch (err) {
+      console.log(err, "errr");
+    }
+  };
+
+  const HandelSubmit = async () => {
+    if (TimerShow) {
+      if (otp === "1234") {
+        setRoute_forgate_Chgange(false);
+
+        return;
+      } else {
+        toast({
+          position: "top",
+          title: "",
+          description: "Please Enter Valid OTP",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+      }
     }
 
-    if(email.substring().includes("@gmail.com")){
-          setTimerShow(true);
-    }else{
+    console.log(email);
+
+    if (email.substring().includes("@gmail.com")) {
+      let user = await GetForCheckUser({ email });
+
+      if (!user) {
+        toast({
+          position: "top",
+          title: "",
+          description: "User Not Found",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        });
+        setTimerShow(false);
+        return;
+      }
+
+      setTimerShow(true);
+    } else {
       toast({
         position: "top",
         title: "Something Went Wrong",
@@ -40,6 +80,7 @@ const ForgatePassword = ({
         duration: 9000,
         isClosable: true,
       });
+      return;
     }
   };
 
@@ -60,11 +101,8 @@ const ForgatePassword = ({
       clearInterval(id);
     }
 
-    console.log(TimerShow, timer, otp);
-
     const cleanup = () => {
       clearInterval(id);
-      console.log("cleanup is called");
     };
     return cleanup;
   }, [HandelSubmit]);
@@ -117,9 +155,11 @@ const ForgatePassword = ({
               <Text color={"#35A7FF"}>Get OTP on Call</Text>
             </Flex>
           ) : TimerShow ? (
-            <Text color={'#35A7FF'}>Did not receive OTP ? Resend OTP in {timer} second</Text>
+            <Text color={"#35A7FF"}>
+              Did not receive OTP ? Resend OTP in {timer} second
+            </Text>
           ) : (
-            <Text color={'#35A7FF'}>Enter Email Which You Use In SignUp</Text>
+            <Text color={"#35A7FF"}>Enter Email Which You Use In SignUp</Text>
           )}
         </Box>
       </Box>

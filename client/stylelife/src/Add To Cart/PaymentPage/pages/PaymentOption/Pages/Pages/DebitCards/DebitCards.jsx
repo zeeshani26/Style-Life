@@ -7,14 +7,9 @@ import {
   Button,
   Checkbox,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
-import style from "./style/CreditCards.module.css";
-export const CreditCards = ({ setOrderPlace }) => {
-  const [CardNo, setCardNo] = useState("");
-  const [Name, setName] = useState("");
-  const [Date, setDate] = useState("");
-  const [Cvv, setCvv] = useState("");
-
+import React from "react";
+import style from "./style/DebitCards.module.css";
+export const DeditCards = ({ setOrderPlace }) => {
   return (
     <Box className={style.mainBox}>
       <Box>
@@ -27,21 +22,11 @@ export const CreditCards = ({ setOrderPlace }) => {
             bgPos="right"
             bgSize={"30px"}
             bgImage={
-              "https://th.bing.com/th/id/OIP.9TNqDBKi08Xz_DhwKXnwdQHaHa?pid=ImgDet&rs=1"
+              "https://th.bing.com/th/id/R.9e95d35f72b8dc8042b2a2dd61dce2ed?rik=RoQLZ3TAbJmDmw&riu=http%3a%2f%2fwww.enterhindi.com%2fwp-content%2fuploads%2f2017%2f02%2frupay-logo.png&ehk=bWtEwsZPRsJXVWC3ZdnDKUj5gUqKqWYC%2fvus3qkQQsk%3d&risl=&pid=ImgRaw&r=0"
             }
-            // placeholder="Enter Your Number"
-            isInvalid={CardNo == ""}
-            onChange={(e) => setCardNo(e.target.value)}
-            errorBorderColor="red.300"
             size="sm"
-            value={CardNo}
-            id="ccn"
-            type="number"
-            inputmode="numeric"
-            pattern="[0-9\s]{13,19}"
-            autocomplete="cc-number"
-            maxlength="19"
-            placeholder="xxxx xxxx xxxx xxxx"
+                        id="ccn" type="number" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"
+
           />
         </Box>
       </Box>
@@ -51,14 +36,7 @@ export const CreditCards = ({ setOrderPlace }) => {
           <Text>Credit card name</Text>
         </Box>
         <Box>
-          <Input
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Enter Your Name"
-            size="sm"
-            value={Name}
-            isInvalid={Name == ""}
-            errorBorderColor="red.300"
-          />
+          <Input placeholder="Enter Your Name" size="sm" />
         </Box>
       </Box>
 
@@ -66,13 +44,7 @@ export const CreditCards = ({ setOrderPlace }) => {
         <Box>
           <Text mb="15px">Expiry date (MM / YY)</Text>
           <Box>
-            <Input
-              onChange={(e) => setDate(e.target.value)}
-              value={"Date"}
-              type="date"
-              isInvalid={Date == ""}
-              errorBorderColor="red.300"
-            />
+            <Input type="date" />
           </Box>
         </Box>
 
@@ -83,12 +55,8 @@ export const CreditCards = ({ setOrderPlace }) => {
           </Box>
           <Box>
             <Input
-              value={Cvv}
-              onChange={(e) => setCvv(e.target.value)}
               type="password"
               className={style.inputcvv}
-              isInvalid={Cvv == ""}
-              errorBorderColor="red.300"
               w="10rem"
               bgRepeat={"no-repeat"}
               bgPos="right"
