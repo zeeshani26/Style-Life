@@ -33,8 +33,10 @@ const SingleProduct = () => {
   // console.log(product);
   useEffect(() => {
     product = JSON.parse(localStorage.getItem("product")) || {};
-    setRestroId(product._id);
-  }, [product, total]);
+    setRestroId(product);
+  }, []);
+
+  console.log(product,"product")
 
   const handleAdd = async (e) => {
     // console.log(e);

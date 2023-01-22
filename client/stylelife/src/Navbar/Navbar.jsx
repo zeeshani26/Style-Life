@@ -3,7 +3,7 @@ import  "../Navbar/Navbar.css";
 import {Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Image, Input, Menu, MenuButton, MenuItem, MenuList, Spacer, useDisclosure,Text, ListItem, UnorderedList} from "@chakra-ui/react"
 import {Link, NavLink} from "react-router-dom"
 import { PhoneIcon, AddIcon, WarningIcon,HamburgerIcon,ChevronDownIcon} from '@chakra-ui/icons'
-import log from "../logo/logo.jpg"
+import log from "../logo/logo.png"
 import ModalLogin from "../Login/Modal"
 import loc from "../logo/location.png"
 import {useNavigate} from "react-router-dom"
@@ -15,7 +15,7 @@ const links=[
 
 const Navbar = () => {
   const navigate=useNavigate()
-    const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = React.useRef()
   return (
 

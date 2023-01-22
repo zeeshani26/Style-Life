@@ -17,24 +17,6 @@ import style from "./styles/OrderSummary.module.css";
 const OrderSummary = ({ CartDataid }) => {
 
 
-
-localStorage.setItem("cartData", JSON.stringify([{
-  image: "https://img4.nbstatic.in/tr:w-350/5ffed18ac2e889000b575bed.jpg",
-  productname: "Lotus Cafe - JW Marriott Mumbai Juhu",
-  name: "Juhu Road, Juhu",
-  address: "Juhu Road, JW Marriott, Juhu Tara Road, Mumbai",
-  total: 1564,
-  price:15,
-  id: 9099433416907.688,
-}]))
-
-
-
-
-
-
-
-
   let cartData = JSON.parse(localStorage.getItem("cartData")) || "null";
   const toast = useToast();
   const navigation = useNavigate();

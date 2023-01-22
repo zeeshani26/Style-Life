@@ -35,6 +35,7 @@ const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
           duration: 5000,
           isClosable: true,
         });
+      
 
         let obj = {
           name,
@@ -46,7 +47,30 @@ const SignIn = ({ name, HandelChange, onClose, setPasswordForgate }) => {
 
         navigation("/");
         onClose();
-      } else {
+      }
+      else if(res.data.msg === "Admin login successful"){
+        toast({
+          position: "top",
+          title: "Admin Login",
+          description: "Admin Login successfully",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
+      
+
+        let obj = {
+          name,
+          user: email,
+          token: res.data.token,
+        };
+
+        localStorage.setItem("StyleLifeAdminData", JSON.stringify(obj));
+
+        navigation("/");
+        onClose();
+      }
+      else {
         toast({
           position: "top",
           title: "Wrong Credentials",
