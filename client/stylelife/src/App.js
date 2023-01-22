@@ -1,3 +1,4 @@
+import PaymentPage from "./Add To Cart/PaymentPage/PaymentPage";
 import "./App.css";
 import Footer from "./Footer/Footer";
 
@@ -17,7 +18,6 @@ function App() {
       {/* <AllRoutes /> */}
       {/* <Homepageroutes /> */}
       {/* <Homepageroutes /> */}
-
       {/* Navigation bar here */}
       {/* <Footer /> */}
 
