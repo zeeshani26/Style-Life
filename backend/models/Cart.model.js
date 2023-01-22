@@ -4,8 +4,17 @@ const CartSchema = mongoose.Schema({
     userId:{
         type:String,
     },
-    restroId:String,
-    dealsId:String,
+    restroId:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"rest"
+    },
+    dealsId:{
+        type:[
+            {
+                deals:String
+            }
+        ]
+    },
     count:{
         type:Number,
         default:1

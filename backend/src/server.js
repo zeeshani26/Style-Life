@@ -11,6 +11,7 @@ const {authentication} = require("../middlewears/Authentication.middlewear");
 const {AdminVerification} = require("../middlewears/Adminverficiation.middlewear");
 const {AdminRouter} = require("../Routes/Admin.route");
 const cors = require("cors");
+const { PaymentRouter } = require('../Routes/Payment.route');
 
 app.use(cors())
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use("/health",HealthRouter);
 app.use("/cart",CartRouter); 
 // app.use(AdminVerification)                                                            
 app.use("/admin",AdminRouter);
+app.use("/payment",PaymentRouter);
 app.listen(process.env.PORT,async()=>{
     try {
         await connection;

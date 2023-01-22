@@ -1,26 +1,13 @@
 
-// //  import {
-// //   legacy_createStore,
-// //   applyMiddleware,
-// //   combineReducers,
-// //   compose,
-// // } from "redux";
-// import thunk from "redux-thunk";
-// import { prodReducer } from "./products/ProdReducer";
-
-// const rootReducer = combineReducers({
-//   prodManager: prodReducer,
-// });
-
-import {
+ import {
   legacy_createStore,
   applyMiddleware,
   combineReducers,
   compose,
 } from "redux";
 import thunk from "redux-thunk";
-import AdminReducer from "./Admin/AdminReducer";
 import { prodReducer } from "./products/ProdReducer";
+import AdminReducer from "./Admin/AdminReducer"; 
 
 const rootReducer = combineReducers({
   prodManager: prodReducer,
@@ -28,9 +15,9 @@ const rootReducer = combineReducers({
 });
 
 
-// const composer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-// export const store = legacy_createStore(
-//   rootReducer,
-//   composer(applyMiddleware(thunk))
-// );
+export const store = legacy_createStore(
+  rootReducer,
+  composer(applyMiddleware(thunk))
+);

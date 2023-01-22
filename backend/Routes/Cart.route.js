@@ -6,8 +6,9 @@ CartRouter.get("/",async(req,res)=>{
     const id = req.body.userId;
     console.log(req.body);
     try {
-        const allData = await CartModel.find({userId:id});
-        res.status(200).json(allData);
+        const allData = await CartModel.find({userId:id}).populate("dealsId");
+        const Data = await CartModel.find({userId:id},{userId:0})
+        res.status(200).send(Data);
     } catch (error) {
         console.log(error.message);
     }
@@ -19,12 +20,11 @@ CartRouter.post("/add",async(req,res) => {
         const user = await CartModel.find({userId});
         console.log(user)
         if(user.length>0){
-            const cart= await CartModel.updateOne({userId,dealsId,restroId},{$inc:{"count":1}},{new:true})
+            const cart= await CartModel.updateOne({userId:userId},{$push:{"dealsId":{"deals":dealsId}}})
             return res.send(cart)
         }
         else{
-            const cart = new CartModel({userId,restroId,dealsId});
-            cart.save();
+            const cart =await CartModel.create({userId,restroId,dealsId:{$set:dealsId}});
             res.send('product added successfully');
         }
     } catch (error) {

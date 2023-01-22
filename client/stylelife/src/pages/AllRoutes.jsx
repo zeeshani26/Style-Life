@@ -6,7 +6,7 @@ import Products from "../Components/Products";
 import SignIn from "../Login/SignIn/SignIn";
 import SignUp from "../Login/SignUp/SignUp";
 
-import SingleProduct from "../components/SingleProduct";
+import SingleProduct from "../Components/SingleProduct";
 
 const AllRoutes = () => {
   return (
