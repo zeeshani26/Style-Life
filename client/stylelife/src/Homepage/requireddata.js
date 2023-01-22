@@ -85,3 +85,84 @@ export const promocodedata=[
     {id:6,logo:"https://img4.nbstatic.in/tr:w-700/63603ad122b317000b73ab32.jpeg",alt:"logo",tag:"Deep Tissue",valid:"31 Dec 2023"}
 ]
 
+export const resbrandsdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/634aa77922156b000bc5fa5e.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60266a4279600c000b33f266.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-350/60e40fd61e2731000b5adac7.jpg",alt:"logo"}
+]
+
+export const buffetspecialdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/62dfdfabedffcc000bfae0f8.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/62dfe06db3c621000b6fbc20.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-350/62dfe153b3c621000b6fbc2b.jpg",alt:"logo"}
+]
+export const buffetplandata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/62def33eb3c621000b6fbb0f.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/62def372edffcc000bfadff6.jpg",alt:"logo"}
+]
+export const buffetbrandsdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/6076f0ad1e2731000b1ae957.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60266a4279600c000b33f266.jpg",alt:"logo"}
+]
+
+export const buffetdinnerdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-700/60d989e340e9df000b9f2355.jpg",alt:"logo",tag:"Barbeque Nation",add:"Sector E",des:"Dinner Buffets",Rs:"₹1800"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-700/60d989e340e9df000b9f2355.jpg",alt:"logo",tag:"Barbeque Nation",add:"Sector E",des:"Dinner Buffets",Rs:"₹1800"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-700/60d989e340e9df000b9f2355.jpg",alt:"logo",tag:"Barbeque Nation",add:"Sector E",des:"Dinner Buffets",Rs:"₹1800"},
+    {id:4,logo:"https://img4.nbstatic.in/tr:w-700/60d989e340e9df000b9f2355.jpg",alt:"logo",tag:"Barbeque Nation",add:"Sector E",des:"Dinner Buffets",Rs:"₹1800"},
+    {id:5,logo:"https://img4.nbstatic.in/tr:w-700/60d989e340e9df000b9f2355.jpg",alt:"logo",tag:"Barbeque Nation",add:"Sector E",des:"Dinner Buffets",Rs:"₹1800"},
+
+]
+
+export const saloonslider=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-2800/627b523db3c621000b5f5e96.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-2800/627b523db3c621000b5f5e96.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-2800/627b53afb3c621000b5f5ea1.jpg",alt:"logo"},
+    {id:4,logo:"https://img4.nbstatic.in/tr:w-2800/627b52293b031b000b774d81.jpg",alt:"logo"},
+    {id:5,logo:"https://img4.nbstatic.in/tr:w-2800/627b523db3c621000b5f5e96.jpg",alt:"logo"}
+]
+
+export const saloonofferforwomendata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/60fe7add40e9df000b0f5c64.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60fe7aad40e9df000b0f5c63.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-350/60fe7a7440e9df000b0f5c5f.jpg",alt:"logo"},
+    {id:4,logo:"https://img4.nbstatic.in/tr:w-350/60fe7a3d1e2731000b9be427.jpg",alt:"logo"},
+    {id:5,logo:"https://img4.nbstatic.in/tr:w-350/60fe79f940e9df000b0f5c5d.jpg",alt:"logo"}
+]
+export const saloonofferformendata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/60fe7e261e2731000b9be43a.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60fe7d051e2731000b9be436.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-350/60fe7bcb40e9df000b0f5c6b.jpg",alt:"logo"},
+    {id:4,logo:"https://img4.nbstatic.in/tr:w-350/60fe7b9f40e9df000b0f5c6a.jpg",alt:"logo"},
+    {id:5,logo:"https://img4.nbstatic.in/tr:w-350/60fe79f940e9df000b0f5c5d.jpg",alt:"logo"}
+]
+export const saloonofferfortraetmentdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/6100b3f640e9df000b0f5f33.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/6100b4261e2731000b9be704.jpg",alt:"logo"}
+]
+export const saloonotrendingdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/60faa3d940e9df000b0f597e.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60faa4391e2731000b9be141.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-350/60faa48740e9df000b0f5986.jpg",alt:"logo"}
+]
+
+export const spaslider=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-2800/627b53b8b3c621000b5f5ea2.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-2800/627b53c1b3c621000b5f5ea3.jpg",alt:"logo"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-2800/627b54d73b031b000b774d9c.jpg",alt:"logo"}
+    
+]
+export const sparelaxingdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/60fe59751e2731000b9be396.jpg",alt:"logo",tag:"Ayurvedic"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60fe598d40e9df000b0f5bcb.jpg",alt:"logo",tag:"Thai"},
+    {id:3,logo:"https://img4.nbstatic.in/tr:w-350/60fe592d1e2731000b9be392.jpg",alt:"logo",tag:"Aromatherapy"},
+    {id:4,logo:"https://img4.nbstatic.in/tr:w-350/60fe594a1e2731000b9be395.jpg",alt:"logo",tag:"Balinese"},
+    {id:5,logo:"https://img4.nbstatic.in/tr:w-350/60fe59af1e2731000b9be397.jpg",alt:"logo",tag:"Swedish"},
+    {id:6,logo:"https://img4.nbstatic.in/tr:w-350/60fe59ce1e2731000b9be399.jpg",alt:"logo",tag:"Deep Tissue"}
+    
+]
+
+export const spatrendingdata=[
+    {id:1,logo:"https://img4.nbstatic.in/tr:w-350/60fe5cad40e9df000b0f5bd9.jpg",alt:"logo"},
+    {id:2,logo:"https://img4.nbstatic.in/tr:w-350/60fe5cc340e9df000b0f5bdb.jpg",alt:"logo"}
+]
