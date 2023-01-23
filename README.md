@@ -98,6 +98,8 @@ Zeeshan is responsible for creating
 
 ## Admin Dashboard
 
+![Screenshot (263)](https://user-images.githubusercontent.com/107391017/213995078-c5e25103-17b4-47f9-9771-3643ebe6d8ad.png)
+
 ### Here all the shops(restaurants/ spa or message center and health) will be visible here. Admin can add new shop, update any shop or delete any shop. He/She has the authority my friend. ;)
 
 
