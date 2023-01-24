@@ -15,7 +15,7 @@ For Backend we use Nodejs, MongoDb, Mongoose and Express js. With the help of js
 
 For Creating the Ui we use Reactjs, Chakra, Redux, Css and uiverse also.
 
-# Hi, I'm Krishan! 👋
+# Hi, I'm ! 👋
 
 ## Krishan Kumar - Team Lead
 
