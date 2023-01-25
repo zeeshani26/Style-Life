@@ -216,7 +216,7 @@ sorting will apply basis on name (asc or desc) just pass sort=asc for ascending 
 admin/user/type/:id
 
 
-# Thank you if you read full documentation. You are awesome as we are. We will meet at the next project. Bye :) gulabi dil.
+# Thank you if you read full documentation. You are awesome as we are. We will meet at the next project. Bye :) 
 
 
 
